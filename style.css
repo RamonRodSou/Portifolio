@@ -6,17 +6,16 @@ body {
 
 .containe-1 {
 
-    position: relative;
+    display: flex;
     width: 100%;
     margin: 0 auto;
-    
+    align-items: center;
+    justify-content: space-between;
 }
 
 header {
 
-   /* background: linear-gradient(#0c232c, #778f9890,#0c232c);
-    */margin: 0 auto  ;
-
+    margin: 0 auto ;
 }
 
 .nome {
@@ -45,17 +44,17 @@ header {
 
 .menu{
 
-    position: absolute;
-    top: 0;
-    right: 0;    
     margin: 0.5rem 3rem;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     font-size: 1rem;
     color: rgb(255, 255, 255);
     font-family: Roboto, sans-serif;
-
 }
 
+#btn-mobile, #nav-mobile, .menu-mobile {
+
+    display: none;
+}
 .menu li {
 
 	display: inline;
@@ -99,29 +98,28 @@ header {
 
     position: relative;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .apresentacao h2 {
 
     text-align: center; 
     font-family: Roboto, sans-serif;
-}
-
-section h2 {
-
+    
     font-size: 4.5em;
     color: #ffffff;
     padding: 2.5em;
+
 }
 
-section h2::after {
+
+.apresentacao h2::after {
 
     color: aqua;
     content: " !";
 
 }
-.hello-world {
+.background {
     
     position: absolute;
     width: 100%;
@@ -168,6 +166,9 @@ section h2::after {
 
     display: inline-block;
     padding: 50px 100px 100px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: Roboto, sans-serif;
 }
 
 .minhas-redes li {
@@ -223,4 +224,97 @@ section h2::after {
     color: #ffffff4f;
     padding: 2rem;
     
+}
+
+@media screen and (max-width:480px) {
+
+    #btn-mobile {
+
+        display: block;
+        position: absolute;
+        top:0;
+        right: 0;
+        margin: 20px;
+    }
+
+    #nav-principal {
+
+        display: none;
+    }
+
+    #nav-mobile {
+
+        display:flex;
+        text-align: center;
+    }
+    
+    #nav-mobile.active .menu-mobile {
+
+        display: block;   
+        transition: 500ms;     
+    }
+
+    .menu-mobile {
+
+        position: relative;
+        width: 100%;
+        color: #ffffff;   
+        background: #0c232c;    
+    }
+
+    .menu-mobile li {
+
+        padding: 1rem;
+        font-family: Roboto, sans-serif;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    .menu-mobile li:hover {
+
+        background: #1c3d4a;
+    } 
+    .menu-mobile li:active {
+
+        background: #4595b4;
+    } 
+
+    .habilidades, .sobre-mim{
+
+        text-align: center;
+    }
+    
+    .containe-1 {
+        display: block;
+        
+    }
+
+    .nome {
+
+        font-size: 0.8rem;
+    }
+
+    .apresentacao{
+
+        position: relative;
+        width: auto;
+    }
+  
+    
+    .apresentacao h2 {
+       
+        font-size: 2.5rem;
+        padding: 1.5em 1em;
+    }
+    .tecnologias-op li {
+
+        display: inline-block;
+        padding: 50px 50px 100px;
+    }
+
+    .tecnologias-op li img {
+
+        width: 152px;
+
+    }
 }
