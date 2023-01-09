@@ -230,105 +230,7 @@ header {
         top:0;
         right: 0;
         margin: 20px;
-    }
-
-    #nav-principal {
-
-        display: none;
-    }
-
-    #nav-mobile {
-
-        display:flex;
-        text-align: center;
-    }
-    
-    #nav-mobile.active .menu-mobile {
-
-        display: block;   
-        transition: 500ms;  
-    }
-
-    .menu-mobile {
-
-        position: relative;
-        width: 100%;
-        color: #ffffff;   
-        background: #0c232c;    
-
-    }
-
-    .menu-mobile li {
-
-        padding: 1rem;
-        font-family: Roboto, sans-serif;
-        transition: 1s;
-        cursor: pointer;
-        border-bottom: 1px solid rgba(36, 74, 111, 0.436);
-
-    }
-    
-    .menu-mobile li:first-child {
-
-        border-top: 1px solid rgba(36, 74, 111, 0.436);
-
-    }
-
-     .menu-mobile li:hover {
-
-        background: #1c3d4a;
-    } 
-    .menu-mobile li:active {
-
-        background: #4595b4;
         
-    } 
-
-    .habilidades, .sobre-mim{
-
-        text-align: center;
-    }
-    
-    .containe-1 {
-        display: block;
-        
-    }
-
-    .nome {
-
-        font-size: 0.8rem;
-    }
-
-    .apresentacao{
-
-        position: relative;
-        width: auto;
-    }
-  
-    
-    .apresentacao h2 {
-       
-        font-size: 3.5rem;
-        padding: 1.5em 1em;
-    }
-    .tecnologias-op li {
-
-        display: inline-block;
-        padding: 50px 50px 100px;
-    }
-
-    .tecnologias-op li img {
-
-        width: 152px;
-
-    }
-}
-
-@media screen and (max-width:480px) {
-
-    #btn-mobile {
-
-        display: block;
         background: none;
         border: none;
         color: rgb(255, 255, 255); 
@@ -395,24 +297,19 @@ header {
     .menu-mobile li:first-child {
 
         border-top: 1px solid rgba(36, 74, 111, 0.436);
-
     }
 
      .menu-mobile li:hover {
 
         background: #1c3d4a;
-    } 
+    }
+
     .menu-mobile li:active {
 
         background: #4595b4;
         
-    } 
-
-    .habilidades, .sobre-mim{
-
-        text-align: center;
     }
-    
+
     .containe-1 {
         display: block;
         
@@ -432,7 +329,7 @@ header {
     
     .apresentacao h2 {
        
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         padding: 1.5em 1em;
     }
     .tecnologias-op li {
@@ -446,4 +343,46 @@ header {
         width: 152px;
 
     }
+}
+
+@media screen and (max-width:480px) {
+
+    .habilidades, .sobre-mim{
+
+        text-align: center;
+    }
+    
+    .apresentacao h2 {
+       
+        font-size: 2.5rem;
+        padding: 1.5em 1em;
+    }
+
+}
+
+@media screen and (max-width:310px){
+
+    .apresentacao h2{
+
+        font-size: 2.0em;   
+    }
+}
+@media screen and (max-width:253px){
+
+    .apresentacao h2{
+
+        font-size: 1.5em;   
+    }
+
+    .titulo {
+        
+        font-size: 1.5rem;
+    }
+
+    .tecnologias-op li img {
+
+        width: 80px;
+
+    }
+
 }
