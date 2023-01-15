@@ -59,14 +59,12 @@
     .menu-mobile a{
 
         text-decoration: none;
-        color: #ffffff;
-    
+        color: #ffffff;    
     }
     
-
     .containe-1 {
-        display: block;
-        
+
+        display: block;    
     }
 
     .nome {
@@ -83,6 +81,8 @@
     
     #apresentacao h2 {
        
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 2px 5px #000000;
         font-size: 3.5rem;
         padding: 1.5em 1em;
     }
