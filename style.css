@@ -1,7 +1,7 @@
+
 body {
 
     background: #0c232c;
-    
 }
 
 .containe-1 {
@@ -19,45 +19,33 @@ header {
 }
 
 .nome {
-    
+
+    font-family: 'Roboto', sans-serif;
     font-size: 1Rem;
     color: rgb(255, 255, 255);
+    text-shadow: 2px 3px #000000;
     margin: 0.5rem 3rem;
     padding: 1rem 0;
-    font-family: Roboto, sans-serif;
-}
-
-.nome::before {
-    color: #0022FF;
-    content: "< ";
-}
-
-.nome::after {
-    color: #0022FF;
-    content: " >";
-}
-
-.nome:hover{
-
-    color: #a6c9e8;
 }
 
 .menu{
 
     margin: 0.5rem 3rem;
     padding: 1rem 0;
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
-    font-family: Roboto, sans-serif;
 }
 
 #btn-mobile, #nav-mobile, .menu-mobile{
 
     display: none;
 }
+
 .menu li {
 
 	display: inline;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+
 	margin: 0 0 0 15px;
     padding: 0 0 5px;
     transition: 400ms;
@@ -71,49 +59,33 @@ header {
     transition: background-size 600ms ease;
 }
 
-.menu li:last-child {
+.menu a{
 
-    padding: 10px 35px;
-    background: #0793de;
-    border-radius: 15px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
-.menu li:first-child:hover, .menu li:nth-child(2):hover {    
 
-     transform-box: 500ms;
-    background-size: 100% 1px;
-}
-
-.hello-world {
-
-    opacity: 0.5;
-}
-
-.apresentacao, .sobre-mim{
+#apresentacao, #sobre-mim{
 
     position: relative;
     width: 100%;
     margin: 0 auto; 
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+
+
 }
 
-.apresentacao h2 {
+#apresentacao h2 {
 
-    text-align: center; 
-    font-family: Roboto, sans-serif;
-    
+    text-align: center;    
     font-size: 4.5em;
-    color: #ffffff;
+    text-shadow: 2px 5px #000000;
     padding: 2.5em;
 
 }
 
-
-.apresentacao h2::after {
-
-    color: aqua;
-    content: " !";
-
-}
 .background {
     
     position: absolute;
@@ -133,7 +105,10 @@ header {
     font-size: 2.5rem;
     margin-top: 100px;
     padding: 2rem;
-    font-family: Roboto, sans-serif;
+    text-shadow: 2px 3px #000000;
+    font-family: 'Roboto', sans-serif;
+
+
 }
 
 .titulo ~ p {
@@ -141,12 +116,13 @@ header {
     color: #ffffff;
     font-size: 1rem;
     padding: 2.5rem;
-    font-family: Roboto, sans-serif;
     line-height: 1.5rem;
+    
 }
 
-.habilidades {
+#habilidades {
 
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(#0c232c 5%, #034c68 45%,#034c68  70%, #0c232c 95%); 
 }
 
@@ -157,13 +133,13 @@ header {
     text-align: center;
 }
 
-.tecnologias-op li {
+.tecnologias-op li{
 
     display: inline-block;
     padding: 50px 100px 100px;
     color: #ffffff;
+    text-shadow: 2px 2px #000000;
     font-size: 1.5rem;
-    font-family: Roboto, sans-serif;
 }
 
 .minhas-redes li {
@@ -171,6 +147,11 @@ header {
     display: inline-block;
     padding: 50px 20px;
 
+}
+
+#carrosel-html {
+
+    display: none;
 }
 
 .github {
@@ -203,186 +184,9 @@ header {
     opacity: 0.7;
 }
 
-
-.github:hover,.linkdin:hover,.whatsapp:hover {
-
-    opacity: 1;
-}
-
-.github:active,.linkdin:active,.whatsapp:active {
-
-    background: #0ae469;
-}
-
 .copyright {
 
     color: #ffffff4f;
     padding: 2rem;
     
-}
-
-@media screen and (max-width:800px) {
-
-    #btn-mobile {
-
-        display: block;
-        position: absolute;
-        top:0;
-        right: 0;
-        margin: 20px;
-        
-        background: none;
-        border: none;
-        color: rgb(255, 255, 255); 
-        width: 20px;
-        border-top: 2px solid;
-        cursor: pointer;
-    }
-
-    #btn-mobile::after, #btn-mobile::before{
-
-        position: relative;
-        content: " ";
-        display: block;
-        width: 20px;
-        border-top: 2px solid;
-        margin-top: 5px;
-        background: currentColor; /* quando a cor do BTN-mobile for mudada, automaticamente muda aqui tbm */ 
-    }
-
-    #nav-mobile.active #btn-mobile {
-
-        transform: rotate(180deg);
-    }
-
-    #nav-mobile.active #btn-mobile::before {
-
-        transform: rotate(41deg);
-    }
-   
-    #nav-principal {
-
-        display: none;
-    }
-
-    #nav-mobile {
-
-        display:flex;
-        text-align: center;
-    }
-    
-      #nav-mobile.active .menu-mobile {
-
-        display: block;   
-        transition: 500ms;  
-    } 
-
-    .menu-mobile {
-
-        position: relative;
-        width: 100%;
-        color: #ffffff;   
-        background: #0c232c;    
-    }
-
-    .menu-mobile li {
-
-        padding: 1rem;
-        font-family: Roboto, sans-serif;
-        transition: 1s;
-        cursor: pointer;
-        border-bottom: 1px solid rgba(36, 74, 111, 0.436);
-    }
-    
-    .menu-mobile li:first-child {
-
-        border-top: 1px solid rgba(36, 74, 111, 0.436);
-    }
-
-     .menu-mobile li:hover {
-
-        background: #1c3d4a;
-    }
-
-    .menu-mobile li:active {
-
-        background: #4595b4;
-        
-    }
-
-    .containe-1 {
-        display: block;
-        
-    }
-
-    .nome {
-
-        font-size: 0.8rem;
-    }
-
-    .apresentacao{
-
-        position: relative;
-        width: auto;
-    }
-  
-    
-    .apresentacao h2 {
-       
-        font-size: 3.5rem;
-        padding: 1.5em 1em;
-    }
-    .tecnologias-op li {
-
-        display: inline-block;
-        padding: 50px 50px 100px;
-    }
-
-    .tecnologias-op li img {
-
-        width: 152px;
-
-    }
-}
-
-@media screen and (max-width:480px) {
-
-    .habilidades, .sobre-mim{
-
-        text-align: center;
-    }
-    
-    .apresentacao h2 {
-       
-        font-size: 2.5rem;
-        padding: 1.5em 1em;
-    }
-
-}
-
-@media screen and (max-width:310px){
-
-    .apresentacao h2{
-
-        font-size: 2.0em;   
-    }
-}
-@media screen and (max-width:253px){
-
-    .apresentacao h2{
-
-        font-size: 1.5em;   
-    }
-
-    .titulo {
-        
-        font-size: 1.5rem;
-    }
-
-    .tecnologias-op li img {
-
-        width: 80px;
-
-    }
-
 }

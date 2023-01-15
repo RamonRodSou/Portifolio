@@ -1,0 +1,95 @@
+html {
+    
+    scroll-behavior: smooth;
+  }
+
+.nome::before {
+    color: #0022FF;
+    content: "< ";
+}
+
+.nome::after {
+    color: #0022FF;
+    content: " >";
+}
+
+.nome:hover{
+
+    color: #a6c9e8;
+}
+.menu li:last-child {
+
+    padding: 10px 35px;
+    background: #0793de;
+    border-radius: 15px;
+}
+
+.menu li:first-child:hover, .menu li:nth-child(2):hover {    
+
+     transform-box: 500ms;
+    background-size: 100% 1px;
+}
+
+#apresentacao h2::after {
+
+    color: aqua;
+    content: " !";
+
+}
+
+.github:hover,.linkdin:hover,.whatsapp:hover {
+
+    opacity: 1;
+}
+
+.github:active,.linkdin:active,.whatsapp:active {
+
+    background: #0ae469;
+}
+
+@media screen and (max-width:800px)  {
+
+    #nav-mobile.active #btn-mobile {
+
+        transform: rotate(180deg);
+    }
+
+    #nav-mobile.active #btn-mobile::before {
+
+        transform: rotate(41deg);
+    }
+
+    
+    #nav-mobile.active .menu-mobile {
+
+        display: block;   
+        transition: 500ms;  
+    } 
+    .menu-mobile li:first-child {
+
+        border-top: 1px solid rgba(36, 74, 111, 0.436);
+    }
+
+    .menu-mobile li:hover {
+
+        background: #1c3d4a;
+    }
+
+    .menu-mobile li:active {
+
+        background: #4595b4;
+        
+    }
+
+    @keyframes carrocel {
+
+        0%{ margin-left:  0; }
+        20%{ margin-left:  0; }
+        35%{ margin-left:  -100%; }
+        50%{ margin-left:  -100%; }
+        75%{ margin-left:  -200%; }
+        90%{ margin-left:  -200%; }
+        100%{ margin-left:  -300%; }
+
+    }
+}
