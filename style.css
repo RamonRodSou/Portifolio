@@ -69,12 +69,19 @@ header {
 #apresentacao, #sobre-mim{
 
     position: relative;
-    width: 100%;
+    width: 80%;
     margin: 0 auto; 
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
 
+}
 
+#sobre-mim{
+    
+    box-shadow: 4px 6px 20px #00000036;
+    border-radius: 3px;
+    transition: all .3s;
+    margin-top: 50px;
 }
 
 #apresentacao h2 {
@@ -108,7 +115,6 @@ header {
     text-shadow: 2px 3px #000000;
     font-family: 'Roboto', sans-serif;
 
-
 }
 
 .titulo ~ p {
@@ -120,6 +126,12 @@ header {
     
 }
 
+#habilidade-titulo {
+
+    width: 80%;
+    margin: 0 auto;
+ }
+
 #habilidades {
 
     font-family: 'Roboto', sans-serif;
@@ -128,9 +140,20 @@ header {
 
 .tecnologias,.contato {
 
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
+}
+
+.contato{
+    
+    box-shadow: -4px -6px 20px#00000036;
+    border-radius: 3px;
+    padding: 16px;
+    transition: all .3s;
+
+    margin-bottom: 50px;
+
 }
 
 .tecnologias-op li{
@@ -185,6 +208,8 @@ header {
 }
 
 .copyright {
+
+    text-align: center;
 
     color: #ffffff4f;
     padding: 2rem;
