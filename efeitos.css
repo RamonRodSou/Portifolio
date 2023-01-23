@@ -17,16 +17,15 @@ html {
 
     color: #a6c9e8;
 }
-.menu li:last-child {
 
-    padding: 10px 35px;
-    background: #0793de;
-    border-radius: 15px;
+.menu li:last-child:hover {
+
+    background: #7acdf9;
 }
 
 .menu li:first-child:hover, .menu li:nth-child(2):hover {    
 
-     transform-box: 500ms;
+    transform-box: 500ms;
     background-size: 100% 1px;
 }
 
@@ -34,7 +33,6 @@ html {
 
     color: aqua;
     content: " !";
-
 }
 
 .github:hover,.linkdin:hover,.whatsapp:hover {

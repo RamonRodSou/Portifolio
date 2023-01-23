@@ -59,12 +59,18 @@ header {
     transition: background-size 600ms ease;
 }
 
+.menu li:last-child {
+
+    padding: 10px 35px;
+    background: #0793de;
+    border-radius: 15px;
+}
+
 .menu a{
 
     text-decoration: none;
     color: #ffffff;
 }
-
 
 #apresentacao, #sobre-mim{
 
