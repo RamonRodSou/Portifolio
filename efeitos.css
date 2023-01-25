@@ -63,6 +63,11 @@ html {
     transform: translate3d(-50px, 0, 0);
 }
 
+[data-anime="right"] {
+
+    transform: translate3d(50px, 0, 0);
+}
+
 [data-anime].animate {
 
     opacity: 1;
@@ -103,15 +108,7 @@ html {
         
     }
 
-    [data-anime="left"] {
 
-        transform: translate3d( 0, 0, 0);
-    }
-
-    [data-anime="down-cel"] {
-
-        transform: translate3d( 0, 0, 0);
-    }
 
     @keyframes carrocel {
 

@@ -4,18 +4,24 @@ body {
     background: #0c232c;
 }
 
-.containe-1 {
+.container {
+
+    width: 80%;
+    margin: 0 auto; 
+
+    margin-top: 100px;
+
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+} 
+
+header div {
 
     display: flex;
     width: 100%;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
-}
-
-header {
-    
-    margin: 0 auto ;
 }
 
 .nome {
@@ -71,24 +77,9 @@ header {
     text-decoration: none;
     color: #ffffff;
 }
+#apresentacao {
 
-#apresentacao, #sobre-mim{
-
-    position: relative;
-    width: 80%;
-    margin: 0 auto; 
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-
-}
-
-#sobre-mim{
-    
-    box-shadow: 4px 6px 20px #00000036;
-    border-radius: 3px;
-    transition: all .3s;
-    margin-top: 50px;
-
+    margin-top: 0;
 }
 
 #apresentacao h2 {
@@ -97,7 +88,13 @@ header {
     font-size: 4.5em;
     text-shadow: 2px 5px #000000;
     padding: 2.5em;
+}
 
+#sobre-mim{
+    
+    box-shadow: 4px 6px 20px #00000036;
+    border-radius: 3px;
+    transition: all .3s;
 }
 
 .background {
@@ -117,59 +114,55 @@ header {
 
     color: #ffffff;
     font-size: 2.5rem;
-    margin-top: 100px;
     padding: 2rem;
     text-shadow: 2px 3px #000000;
-    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
 
 }
 
 .titulo ~ p {
-
-    color: #ffffff;
+    
     font-size: 1rem;
     padding: 2.5rem;
     line-height: 1.5rem;
-    
 }
-
-#habilidade-titulo {
-
-    width: 80%;
-    margin: 0 auto;
- }
 
 #habilidades {
 
+    box-shadow: -4px -6px 20px#00000036, 4px 6px 20px #00000036;;
+
+    border-radius: 3px;
+    
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(#0c232c 5%, #034c68 45%,#034c68  70%, #0c232c 95%); 
 }
 
-.tecnologias,.contato {
+#tecnologias {
 
+    text-align: center;
     width: 80%;
     margin: 0 auto;
-    text-align: center;
-}
-
-.contato{
-    
-    box-shadow: -4px -6px 20px#00000036;
-    border-radius: 3px;
-    padding: 2px 0;
-    transition: all .3s;
-
-    margin-bottom: 50px;
-
 }
 
 .tecnologias-op li{
 
     display: inline-block;
-    padding: 50px 100px 100px;
+    padding: 0px 100px 100px;
+    margin-top: 2.5rem;
     color: #ffffff;
     text-shadow: 2px 2px #000000;
     font-size: 1.5rem;
+}
+
+.contato{
+
+    text-align: center;
+
+    box-shadow: -4px -6px 20px#00000036;
+    border-radius: 3px;
+    padding: 2px 0;
+    transition: all .3s;
+    margin-bottom: 50px;
 }
 
 .minhas-redes li {
