@@ -45,6 +45,30 @@ html {
     background: #0ae469;
 }
 
+
+[data-anime] {
+
+    opacity: 0;
+    transition: .3s;
+}
+
+
+[data-anime="down"] {
+
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime="left"] {
+
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime].animate {
+
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
 @media screen and (max-width:800px)  {
 
     #nav-mobile.active #btn-mobile {
@@ -79,6 +103,16 @@ html {
         
     }
 
+    [data-anime="left"] {
+
+        transform: translate3d( 0, 0, 0);
+    }
+
+    [data-anime="down-cel"] {
+
+        transform: translate3d( 0, 0, 0);
+    }
+
     @keyframes carrocel {
 
         0%{ margin-left:  0; }
@@ -88,6 +122,5 @@ html {
         75%{ margin-left:  -200%; }
         90%{ margin-left:  -200%; }
         100%{ margin-left:  -300%; }
-
     }
 }
