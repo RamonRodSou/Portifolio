@@ -77,5 +77,5 @@ if(target.length) {
     window.addEventListener("scroll" , debounce(function() {
 
         animeSection();
-    }, 200))
+    }, 100))
 }
