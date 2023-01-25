@@ -4,12 +4,12 @@ html {
   }
 
 .nome::before {
-    color: #0022FF;
+    color: aqua;;
     content: "< ";
 }
 
 .nome::after {
-    color: #0022FF;
+    color: aqua;;
     content: " >";
 }
 
@@ -17,6 +17,18 @@ html {
 
     color: #a6c9e8;
 }
+
+@keyframes go-back {
+    
+    from {
+        transform: translate3d(0, 20px, 0);
+        transform: translateX(0) scale(0.6);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        transform: translateX(0) scale(1);
+    }
+  }
 
 .menu li:last-child:hover {
 
@@ -29,22 +41,17 @@ html {
     background-size: 100% 1px;
 }
 
-#apresentacao h2::after {
+#apresentacao h2::after{
 
     color: aqua;
     content: " !";
 }
 
+
 .github:hover,.linkdin:hover,.whatsapp:hover {
 
     opacity: 1;
 }
-
-.github:active,.linkdin:active,.whatsapp:active {
-
-    background: #0ae469;
-}
-
 
 [data-anime] {
 

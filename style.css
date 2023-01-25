@@ -32,9 +32,10 @@ header div {
     text-shadow: 2px 3px #000000;
     margin: 0.5rem 3rem;
     padding: 1rem 0;
+    animation: go-back 1s infinite alternate;
 }
 
-.menu{
+.menu {
 
     margin: 0.5rem 3rem;
     padding: 1rem 0;
@@ -70,6 +71,7 @@ header div {
     padding: 10px 35px;
     background: #0793de;
     border-radius: 15px;
+
 }
 
 .menu a{
@@ -77,9 +79,10 @@ header div {
     text-decoration: none;
     color: #ffffff;
 }
+
 #apresentacao {
 
-    margin-top: 0;
+    margin-top: 0px;
 }
 
 #apresentacao h2 {
