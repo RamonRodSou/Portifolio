@@ -15,7 +15,7 @@ body {
     color: #ffffff;
 } 
 
-header div {
+#div-menu {
 
     display: flex;
     width: 100%;
