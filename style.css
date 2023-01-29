@@ -32,7 +32,7 @@ body {
     text-shadow: 2px 3px #000000;
     margin: 0.5rem 3rem;
     padding: 1rem 0;
-    animation: go-back 1s infinite alternate;
+   /* animation: go-back 1s infinite alternate; /*
 }
 
 .menu {
