@@ -1,0 +1,13 @@
+@media screen and (max-width:800px) {
+
+    .habilidade__lista {
+
+        align-items: center;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+}

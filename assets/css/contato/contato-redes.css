@@ -1,0 +1,7 @@
+.contato__redes{
+
+    display: flex;
+    justify-content: space-around;
+        
+    padding: 3.1rem 1.25rem;
+}

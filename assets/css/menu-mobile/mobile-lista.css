@@ -1,0 +1,16 @@
+.mobile__lista{
+
+    display: none;
+}
+
+
+@media screen and (max-width:800px) {
+    
+    .mobile__lista {
+
+        background: #0c232c;    
+        color: #ffffff;   
+        position: relative;
+        width: 100%;
+    }
+}

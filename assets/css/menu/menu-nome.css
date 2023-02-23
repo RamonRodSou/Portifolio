@@ -1,0 +1,33 @@
+.menu__nome {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1rem 0.2rem #000000;
+    margin: 0.5rem 3rem;
+    padding: 1rem 0;
+   /* animation: go-back 1s infinite alternate; */
+}
+
+.menu__nome::before {
+    color: aqua;
+    content: "< ";
+}
+
+.menu__nome::after {
+    color: aqua;
+    content: " >";
+}
+
+.menu__nome:hover{
+
+    color: #a6c9e8;
+}
+
+@media screen and (max-width:800px) {
+    
+    .menu__nome {
+
+        font-size: 0.8rem;
+    }
+}

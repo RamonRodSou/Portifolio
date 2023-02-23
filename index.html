@@ -6,71 +6,98 @@
     <meta name="viewport" content="width=device-width">
 
     <title>Dev Ramon Rod</title>
+    <link rel="stylesheet" href="assets/css/reset/reset.css">
+    <link rel="stylesheet" href="assets/css/geral/style.css">
+    <link rel="stylesheet" href="assets/css/data-anime/data-anime.css">
+    <link rel="stylesheet" href="assets/css/menu/menu.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-nome.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-principal.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-lista.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-item.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-contato.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-itemNome.css">
+    <link rel="stylesheet" href="assets/css/background/banner.css">
+    <link rel="stylesheet" href="assets/css/menu-mobile/mobile-menu.css">
+    <link rel="stylesheet" href="assets/css/menu-mobile/mobile-lista.css">
+    <link rel="stylesheet" href="assets/css/menu-mobile/mobile-btn.css">
+    <link rel="stylesheet" href="assets/css/menu-mobile/mobile-item.css">
+    <link rel="stylesheet" href="assets/css/menu-mobile/mobile-item-link.css">
+    <link rel="stylesheet" href="assets/css/apresetacao/apresentasao.css">
+    <link rel="stylesheet" href="assets/css/apresetacao/apresentasao-titulo.css">
+    <link rel="stylesheet" href="assets/css/sobreMim/sobreMim.css">
+    <link rel="stylesheet" href="assets/css/sobreMim/sobreMim-texto.css">
+    <link rel="stylesheet" href="assets/css/habilidade/habilidade.css">
+    <link rel="stylesheet" href="assets/css/habilidade/habilidade-lista.css">
+    <link rel="stylesheet" href="assets/css/habilidade/habilidade-tecnologia.css">
+    <link rel="stylesheet" href="assets/css/habilidade/habilidade-menu.css">
+    <link rel="stylesheet" href="assets/css/habilidade/habilidade-img.css">
+    <link rel="stylesheet" href="assets/css/habilidade/habilidade-item.css">
+    <link rel="stylesheet" href="assets/css/contato/contato.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-redes.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-menu.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-gitLinkZap.css">
+    <link rel="stylesheet" href="assets/css/rodape/copyright.css">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="efeitos.css">
-    <link rel="stylesheet" href="responsividade.css">
-    <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
     <header>
-        <div id="div-menu" aria-label="Menu">
-            <h1 class="nome">Developer Ramon RodSou</h1>
-            <nav id="nav-principal">
-                <ul class="menu">                   
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <a href="#contato"><li>Contato</li></a>
+        <div id="menu" aria-label="Menu">
+            <h1 class="menu__nome">Developer Ramon RodSou</h1>
+            <nav id="menu__principal">
+                <ul class="menu__lista">                   
+                    <li class="menu__item"><a class="menu__item--nome" href="#habilidade">Habilidades</a></li>
+                    <li class="menu__item"><a class="menu__item--nome" href="#">Projetos</a></li>
+                    <a class="menu__item--nome" href="#contatos"><li class="menu__item">Contato</li></a>
                 </ul>
             </nav>
         </div>
         <div>
-            <nav id="nav-mobile"> 
-                <span aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"></span>
-                <ul class="menu-mobile" role="menu">                   
-                    <a href="#habilidades"><li>Habilidades</li></a>
-                    <a href="#projetos"><li>Projetos</li></a>
-                    <a href="#contato"><li>Contato</li></a>
+            <nav id="mobile__menu"> 
+                <span aria-label="Abrir Menu" id="mobile__btn" aria-haspopup="true" aria-controls="menu" aria-expanded="false"></span>
+                <ul class="mobile__lista" role="menu">                   
+                    <a class="mobile__item--link" href="#habilidade"><li class="mobile__item">Habilidades</li></a>
+                    <a class="mobile__item--link" href="#projeto"><li class="mobile__item">Projetos</li></a>
+                    <a class="mobile__item--link" href="#contatos"><li class="mobile__item">Contato</li></a>
                 </ul>
             </nav>
         </div>
     </header>
-         <a class="background"> <a>
-    <section id="apresentacao" class="container">
-        <h2 data-anime="left">Desenvolvedor Front-End</h2>
+         <div class="banner"> </div>
+    <section id="apresentacao" class="container-section">
+        <h2 class="apresentacao__titulo" data-anime="left">Desenvolvedor Front-End</h2>
     </section>
-    <section id="sobre-mim" class="container">
+    <section id="sobre-mim" class="container-section">
         <h3 class="titulo" data-anime="down">Sobre mim</h3>
-        <p data-anime="left"> Olá me chamo Ramon moro no Rio de Janeiro, sou Técnico em Eletrotécnica e atualmente trabalho como eletricista. Hoje estou em busca da tão sonhada transição de carreira, venho estudando programação desde outubro de 2022. Iniciei estudando Lógica de Programação com JAVA, e em novembro tive a felicidade de ser contemplado com o programa ONE - Oracle Next Education em parceria com a Alura, e desde então venho me especializando em Front-End com HTML5, CSS3 e JavaScript.</p>
+        <p class="sobreMim__texto" data-anime="left"> Olá me chamo Ramon moro no Rio de Janeiro, sou Técnico em Eletrotécnica e atualmente trabalho como eletricista. Hoje estou em busca da tão sonhada transição de carreira, venho estudando programação desde outubro de 2022. Iniciei estudando Lógica de Programação com JAVA, e em novembro tive a felicidade de ser contemplado com o programa ONE - Oracle Next Education em parceria com a Alura, e desde então venho me especializando em Front-End com HTML5, CSS3 e JavaScript.</p>
     </section>
-    <section  id="habilidades" class="container" >   
-        <div id="habilidade-titulo">
+    <section  id="habilidade" class="container-section" >   
+        <div id="habilidade__titulo">
             <h4 class="titulo" data-anime="down">Habilidades</h4>
         </div>
-        <div id="tecnologias">
-            <nav class="tecnologias-op"  data-anime="right" >
-                <ul>
-                    <li><img src="img/icon-html.png" alt="Logo HTML5"><p>HTML5</p></li>
-                    <li><img src="img/icon-css.png " alt="Logo CSS3"><p>CSS3</p></li>
-                    <li><img src="img/icon-js.png" alt="Logo JavaScript"><p>JavaScript</p></li>
-                    <li id="carrosel-html"><img src="img/icon-html.png" alt="Logo HTML5" ><p>HTML5</p></li>
+        <div id="habilidade__tecnologia">
+            <nav class="habilidade__menu"  data-anime="right" >
+                <ul class="habilidade__lista">
+                    <li class="habilidade__item"><img class="habilidade__img" src="/assets/img/habilidades/icon-html.png" alt="Logo HTML5"><p>HTML5</p></li>
+                    <li class="habilidade__item"><img class="habilidade__img" src="/assets/img/habilidades/icon-css.png" alt="Logo CSS3"><p>CSS3</p></li>
+                    <li class="habilidade__item"><img class="habilidade__img" src="/assets/img/habilidades/icon-js.png" alt="Logo JavaScript"><p>JavaScript</p></li>
+                    <li class="habilidade__item habilidade__item-carrosel"><img src="/assets/img/habilidades/icon-html.png" class="habilidade__img" alt="Logo HTML5" ><p>HTML5</p></li>
                 </ul>   
             </nav>
         </div> 
     </section>
-    <section id="contato" class="container"data-anime="down">
+    <section id="contatos" class="container-section" data-anime="down">
         <div class="contato">
             <h5 class="titulo">Contato</h5>
-            <nav>
-                <ul class="minhas-redes">
-                    <li><a href="https://github.com/RamonRodSou"><img src="img/icon_github.png" class="github"
+            <nav class="contato__menu">
+                <ul class="contato__redes">
+                    <li><a href="https://github.com/RamonRodSou"><img src="/assets/img/contato/icon_github.png" class="contato__github"
                             alt="Logo e Link do Github"></a></li>
-                    <li><a href="https://www.linkedin.com/in/ramonrodsouza/"><img src="img/icon_linkedin.png" class="linkdin"
+                    <li><a href="https://www.linkedin.com/in/ramonrodsouza/"><img src="/assets/img/contato/icon_linkedin.png" class="contato__linkdin"
                             alt="Logo e Link do Linkdin"></a></li>
                     <li><a href="https://api.whatsapp.com/send/?phone=5521972923210&text&app_absent=0"><img
-                            src="img/icon_whatsapp.png" class="whatsapp" alt="Logo e Link do Whatsapp"></a></li>
+                            src="/assets/img/contato/icon_whatsapp.png" class="contato__whatsapp" alt="Logo e Link do Whatsapp"></a></li>
                 </ul>
           </nav>
         </div>

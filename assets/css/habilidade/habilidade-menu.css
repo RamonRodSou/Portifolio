@@ -1,0 +1,21 @@
+@media screen and (max-width:800px) {
+
+    .habilidade__menu {
+            
+        animation-name: carrocel;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        width: 400%;
+    }
+
+    @keyframes carrocel {
+
+        0%{ margin-left:  0; }
+        20%{ margin-left:  0; }
+        35%{ margin-left:  -100%; }
+        50%{ margin-left:  -100%; }
+        75%{ margin-left:  -200%; }
+        90%{ margin-left:  -200%; }
+        100%{ margin-left:  -300%; }
+    }
+}

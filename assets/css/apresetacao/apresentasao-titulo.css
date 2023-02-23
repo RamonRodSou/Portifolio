@@ -1,0 +1,61 @@
+.apresentacao__titulo {
+
+    font-size: 4.5rem;
+    padding: 2.5em;
+    text-shadow: 2px 5px #000000;
+}
+
+.apresentacao__titulo::after{
+
+    color: aqua;
+    content: " !";
+}
+
+@media screen and (max-width:800px) {
+    
+    
+    .apresentacao__titulo {
+       
+        font-size: 3.5rem;
+        font-family: 'Roboto', sans-serif;
+        padding: 1.5em 1em;
+    }
+
+}
+
+@media screen and (max-width:540px) {
+
+    .apresentacao__titulo{
+       
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    
+    .apresentacao__titulo {
+       
+        font-size: 2.5rem;
+        padding: 1.5em 1em;
+        text-shadow: 2px 3px #000000;
+
+    }
+
+}
+
+@media screen and (max-width:400px){
+
+    .apresentacao__titulo{
+
+        font-size: 2.0rem;   
+    }
+}
+
+@media screen and (max-width:253px){
+
+    .apresentacao__titulo{
+
+        font-size: 1.5em;   
+    }
+}

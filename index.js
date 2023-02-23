@@ -1,13 +1,13 @@
 
 /* ---------- Menu para Celular------------*/
 
-const btnMobile = document.getElementById ("btn-mobile");
+const btnMobile = document.getElementById ("mobile__btn");
 
 function toggleMenu () {  //toggle
 
     if (event.type === "touchstart") event.preventDefault();
 
-    const nav = document.getElementById("nav-mobile");
+    const nav = document.getElementById("mobile__menu");
          nav.classList.toggle("active");
 
     const active = nav.classList.contains ("active");
@@ -49,7 +49,6 @@ const debounce = function(func, wait, immediate) {
             if (callNow) func.apply(context, args);
     }
 }
-
 
 
 const target = document.querySelectorAll("[data-anime]");

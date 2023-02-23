@@ -1,0 +1,17 @@
+#habilidade__tecnologia {
+
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:800px) {
+
+    #habilidade__tecnologia {
+
+        height: 350px;
+        width: 205px;
+        overflow: hidden;
+
+    }
+}

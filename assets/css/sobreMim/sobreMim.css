@@ -1,0 +1,16 @@
+#sobre-mim{
+    
+    box-shadow: 0.25rem 0.37rem 1.25rem #00000036;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+@media screen and (max-width:480px) {
+
+    .sobre-mim{
+
+        text-align: center;
+    }
+    
+
+}
