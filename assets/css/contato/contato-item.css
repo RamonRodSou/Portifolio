@@ -1,0 +1,12 @@
+.contato__item {
+
+    margin: 0 1rem;
+}
+
+@media screen and (max-width:400px) {
+
+    .contato__item {
+
+        margin: 0;
+    }
+}
