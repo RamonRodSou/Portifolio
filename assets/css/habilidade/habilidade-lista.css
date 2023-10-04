@@ -1,12 +1,18 @@
+.habilidade__lista {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+
 @media screen and (max-width:800px) {
 
     .habilidade__lista {
+        flex-wrap: nowrap;
+        gap:2rem;
 
-        align-items: center;
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: center;
-        text-align: center;
     }
 
 

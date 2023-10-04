@@ -5,10 +5,10 @@
         animation-name: carrocel;
         animation-duration: 10s;
         animation-iteration-count: infinite;
-        width: 400%;
+        width: 895%;
     }
-
-    @keyframes carrocel {
+    /* Para 3 tecnologias */
+    /* @keyframes carrocel { 
 
         0%{ margin-left:  0; }
         20%{ margin-left:  0; }
@@ -17,5 +17,24 @@
         75%{ margin-left:  -200%; }
         90%{ margin-left:  -200%; }
         100%{ margin-left:  -300%; }
-    }
+    } */
+
+      @keyframes carrocel { 
+
+        0%{ margin-left:  0; } /* Sempre regular do primeiro para o segundo */
+        14.3%{ margin-left:  -110%; }
+        28.5%{ margin-left:  -225%; }
+        42.8%{ margin-left:  -340%; }
+        57%{ margin-left:  -454%; }
+        71.4%{ margin-left:  -569%; }
+        85.8%{ margin-left:  -684%; }
+        100%{ margin-left:  -792%; }
+
+
+
+
+
+
+
+    } 
 }

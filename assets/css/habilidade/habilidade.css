@@ -5,8 +5,7 @@
     box-shadow: -0.25rem -0.37rem 1.25rem #00000036, 0.25rem 0.37rem 1.25rem #00000036;
     border-radius: 0.2rem;
     font-family: 'Roboto', sans-serif;
-
-
+    padding: 0 0 3rem;
 }
 
 @media screen and (max-width:800px) {
