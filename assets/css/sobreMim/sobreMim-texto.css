@@ -3,4 +3,32 @@
     font-size: 1rem;
     line-height: 1.5rem;
     padding: 2.5rem;
+    text-indent: 10px;
+}
+.sobreMim__span {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+
+    .sobreMim__texto {
+        overflow: hidden;
+        height: 300px;
+    }   
+
+    .sobreMim__span {
+
+        display: flex;
+        justify-content: end;
+    }
+
+    .sobreMim__span--p {
+
+        color: #13a2db;
+        cursor: pointer;
+        text-shadow:black 1px 5px 5px;
+        font-size: 0.7rem;
+        padding: 1rem;
+    }
+
 }
