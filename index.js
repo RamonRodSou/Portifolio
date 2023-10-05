@@ -4,14 +4,12 @@
 const btnMobile = document.getElementById ("mobile__btn");
 
 function toggleMenu () {  //toggle
-
     if (event.type === "touchstart") event.preventDefault();
     const nav = document.getElementById("mobile__menu");
          nav.classList.toggle("active");
 
     const active = nav.classList.contains ("active");
             event.currentTarget.setAttribute("aria-expanded", active);
-
     if (active) {
         event.currentTarget.setAttribute("aria-label", "Fechar Menu");
     }
@@ -20,8 +18,9 @@ function toggleMenu () {  //toggle
     }
 }
 
-btnMobile.addEventListener("click", toggleMenu);
-btnMobile.addEventListener("touchstart", toggleMenu);  //responde mais rápido no mobile
+btnMobile.addEventListener('touchstart', toggleMenu, { passive: true });
+
+
 
 /* ---------- Efeito de Scrool ------------*/
 
@@ -60,12 +59,9 @@ function animeSection () {
         }
     })
 }
-
 animeSection();
-
 if(target.length) {
     window.addEventListener("scroll" , debounce(function() {
-
         animeSection();
     }, 100))
 }
