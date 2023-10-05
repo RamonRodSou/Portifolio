@@ -20,8 +20,6 @@ function toggleMenu () {  //toggle
 
 btnMobile.addEventListener('touchstart', toggleMenu, { passive: true });
 
-
-
 /* ---------- Efeito de Scrool ------------*/
 
 
