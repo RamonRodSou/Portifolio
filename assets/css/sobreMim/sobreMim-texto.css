@@ -3,8 +3,15 @@
     font-size: 1rem;
     line-height: 1.5rem;
     padding: 2.5rem;
-    text-indent: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
 }
+
+.sobreMim__texto li {
+    list-style-type: disc; 
+}
+
 .sobreMim__span {
     display: none;
 }
