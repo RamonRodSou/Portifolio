@@ -1,43 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dev Ramon Rod</title>
+    <title>Dev Ramon Rodrigues</title>
+    <link rel="stylesheet" href="assets/css/reset/reset.css">
+    <link rel="stylesheet" href="assets/css/geral/style.css">
+    <link rel="stylesheet" href="assets/css/data-anime/data-anime.css">
+    <link rel="stylesheet" href="assets/css/menu/menu.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-nome.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-principal.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-lista.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-item.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-itemNome.css">
+    <link rel="stylesheet" href="assets/css/background/banner.css">
+    <link rel="stylesheet" href="assets/css/menu-mobile/mobile-menu.css">
+    <link rel="stylesheet" href="assets/css/menu-mobile/mobile-lista.css">
+    <link rel="stylesheet" href="assets/css/menu-mobile/mobile-btn.css">
+    <link rel="stylesheet" href="assets/css/menu-mobile/mobile-item.css">
+    <link rel="stylesheet" href="assets/css/menu-mobile/mobile-item-link.css">
+    <link rel="stylesheet" href="assets/css/apresetacao/apresentasao.css">
+    <link rel="stylesheet" href="assets/css/apresetacao/apresentasao-titulo.css">
+    <link rel="stylesheet" href="assets/css/sobreMim/sobreMim.css">
+    <link rel="stylesheet" href="assets/css/sobreMim/sobreMim-texto.css">
+    <link rel="stylesheet" href="assets/css/projetos/projetos.css">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="efeitos.css">
-    <link rel="stylesheet" href="responsividade.css">
-    <link rel="stylesheet" href="reset.css">
+
+
+    <link rel="stylesheet" href="assets/css/contato/contato.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-redes.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-menu.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-item.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-gitLinkZap.css">
+    <link rel="stylesheet" href="assets/css/rodape/copyright.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
-    <body>
-        <header>
-            <div id="div-menu" aria-label="Menu">
-                <h1 class="nome">Developer Ramon RodSou</h1>
-                <nav id="nav-principal">
-                    <ul class="menu">                   
-                        <li><a href="#habilidades">Habilidades</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <a href="#contato"><li>Contato</li></a>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <nav id="nav-mobile"> 
-                    <span aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"></span>
-                    <ul class="menu-mobile" role="menu">                   
-                        <a href="#habilidades"><li>Habilidades</li></a>
-                        <a href="#projetos"><li>Projetos</li></a>
-                        <a href="#contato"><li>Contato</li></a>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-             <a class="background"> <a>
-                <section class="projetos">
 
-                </section>
-    </body>
+<body>
+    <header>
+        <div id="menu" aria-label="Menu">
+            <h1 class="menu__nome">Desenvolvedor Ramon Rodrigues</h1>
+            <nav id="menu__principal">
+                <ul class="menu__lista">                   
+                    <li class="menu__item"><a class="menu__item--nome" href="#habilidade">Habilidades</a></li>
+                    <li class="menu__item"><a class="menu__item--nome" href="#">Projetos</a></li>
+                    <a class="menu__item--nome" href="#contatos"><li class="menu__item">Contato</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav id="mobile__menu"> 
+                <span aria-label="Abrir Menu" id="mobile__btn" aria-haspopup="true" aria-controls="menu" aria-expanded="false"></span>
+                <ul class="mobile__lista" role="menu">                   
+                    <a class="mobile__item--link" href="#habilidade"><li class="mobile__item">Habilidades</li></a>
+                    <a class="mobile__item--link" href="#projeto"><li class="mobile__item">Projetos</li></a>
+                    <a class="mobile__item--link" href="#contatos"><li class="mobile__item">Contato</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section  id="projetos" class="container-section" >   
+        <div id="projetos__titulo">
+            <h4 class="titulo" data-anime="down">Projetos</h4>
+        </div>
+        <div id="projetos__tecnologia">
+            <nav class="projetos__menu"  data-anime="right" >
+                <ul class="projetos__item">
+                    <li class="projetos__lista">
+                        <img src="./assets/img/Projetos/AluraGeek.png" alt="Imagem AluraGeek" class="projetos__img">
+                        <h5 class="projetos__nome">AluraGeek</h5>
+                        <button class="projetos__saibaMais">Saiba Mais</button>
+                        <div class="projetos__descricao">
+                            <p class="projetos__sobre">Projeto BlaBlaBlack testando que foi feito para tal coisa de um tal teste</p>
+                            <a href="https://ramonrodsou.github.io/AluraGeek/admin/public/index.html" class="projetos__link">Site</a>
+                        </div>
+                    </li>
+                    <li class="projetos__lista">
+                        <img src="./assets/img/Projetos/kidflix.png" alt="Imagem KidFlix" class="projetos__img">
+                        <h5 class="projetos__nome">KidFlix</h5>
+                        <button class="projetos__saibaMais">Saiba Mais</button>
+                        <div class="projetos__descricao">
+                            <p class="projetos__sobre">Testando o teste do teste do testado kkk</p>
+                            <a href="" class="projetos__link">https://kidflix.vercel.app/</a>
+                        </div>
+                    </li>
+                    <!-- <li class="projetos__lista">
+                        <img src="" alt="" class="projetos__img">
+                        <h5 class="projetos__nome"></h5>
+                        <button class="projetos__saibaMais">Saiba Mais</button>
+                        <div class="projetos__descricao">
+                            <p class="projetos__sobre"></p>
+                            <a href="" class="projetos__link"></a>
+                        </div>
+                    </li>
+                    <li class="projetos__lista">
+                        <img src="" alt="" class="projetos__img">
+                        <h5 class="projetos__nome"></h5>
+                        <button class="projetos__saibaMais">Saiba Mais</button>
+                        <div class="projetos__descricao">
+                            <p class="projetos__sobre"></p>
+                            <a href="" class="projetos__link"></a>
+                        </div>
+                    </li> -->
+                </ul>
+            </nav>
+        </div> 
+    </section>
+    <section id="contatos" class="container-section" data-anime="down">
+        <div class="contato">
+            <h5 class="titulo">Contato</h5>
+            <nav class="contato__menu">
+                <ul class="contato__redes">
+                    <li class="contato__item"><a href="https://github.com/RamonRodSou"><img src="./assets/img/icon_github.png" class="contato__github"
+                            alt="Logo e Link do Github"></a></li>
+                    <li class="contato__item"><a href="https://www.linkedin.com/in/ramonrodsouza/"><img src="./assets/img/icon_linkedin.png" class="contato__linkdin"
+                            alt="Logo e Link do Linkdin"></a></li>
+                    <li class="contato__item"><a href="https://api.whatsapp.com/send/?phone=5521972923210&text&app_absent=0"><img
+                            src="./assets/img/icon_whatsapp.png" class="contato__whatsapp" alt="Logo e Link do Whatsapp"></a></li>
+                </ul>
+          </nav>
+        </div>
+    </section> 
+    <footer class="copyright">
+        <p>&copy; Copyright Ramon Rodrigues - Since 2023</p>
+    </footer>
+    <script type="module" src="./index.js"></script>   
+    <script type="module" src="./jquery.js"></script>   
+    
+</body>
+
 </html>
