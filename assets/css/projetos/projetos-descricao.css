@@ -1,0 +1,11 @@
+.projetos__descricao {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 1rem;
+}
+
+.projetos__descricao--invisivel {
+
+    display: none
+}
