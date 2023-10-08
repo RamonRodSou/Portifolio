@@ -1,7 +1,28 @@
 .projetos__img {
 
     width: 100%;
-    height: 250px;
+    height: 220px;
     border-radius: 5px;
 
+}
+
+@media screen and (max-width:885px) {
+
+    .projetos__img {
+
+        width: 100%;
+        height: 190px;
+        border-radius: 5px;
+    }
+    
+}
+
+
+@media screen and (max-width:686px) {
+
+    .projetos__img {
+
+        height: 160px;
+    }
+    
 }

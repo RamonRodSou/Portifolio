@@ -29,3 +29,17 @@
     color: #fff;
 
   }
+
+  @media screen and (max-width:885px) {
+
+
+    .projetos__saibaMais{
+
+      width: 80px;
+      height: 25px;
+      line-height: 15px;
+
+    }
+    
+    
+}
