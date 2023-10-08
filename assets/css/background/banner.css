@@ -11,3 +11,22 @@
     z-index: -1;
     
 } 
+
+@media screen and (max-width:800px) {
+
+    .banner {
+    
+        -webkit-mask-image:  linear-gradient(to top, transparent 30%, #0c232c 90%);
+        
+    } 
+}
+
+
+@media screen and (max-width:460px) {
+
+    .banner {
+    
+        -webkit-mask-image:  linear-gradient(to top, transparent 60%, #0c232c 100%);
+        
+    } 
+}
