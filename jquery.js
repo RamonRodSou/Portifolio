@@ -63,3 +63,35 @@ $(document).ready(function() {
         }
     });
 });
+
+
+// $('.projetos__saibaMais').on('click',saibaNMais)
+
+// function saibaNMais () {
+//     $('.projetos__descricao--invisivel').css(
+//         {
+//             'display':'flex', 
+//         })   
+// }
+
+
+$(document).ready(function () {
+    $('.projetos__saibaMais').each(function () {
+        var btn = $(this);
+        var descricao = btn.closest('.projetos__lista').find('.projetos__descricao--invisivel');
+
+        btn.click(function () {
+            if (descricao.css('display') === 'none') {
+                descricao.css({
+                    'display': 'flex',
+                });
+                btn.text('Fechar');
+            } else {
+                descricao.css({
+                    'display': 'none',
+                });
+                btn.text('Saiba mais');
+            }
+        });
+    });
+});

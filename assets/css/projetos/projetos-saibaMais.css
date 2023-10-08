@@ -15,12 +15,14 @@
     right: 20px;
     bottom: 20px;
     border:none;
+    border-radius: 10px;
     box-shadow: 2px 3px 5px black;
     width: 90px;
     height: 30px;
     line-height: 25px;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
+
   }
  
   .projetos__saibaMais:hover{ 
