@@ -6,6 +6,7 @@
     text-shadow: 0.1rem 0.2rem #000000;
     margin: 0.5rem 3rem;
     padding: 1rem 0;
+    cursor: pointer;
    /* animation: go-back 1s infinite alternate; */
 }
 

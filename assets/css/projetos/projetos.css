@@ -1,21 +1,26 @@
 
-#projetos{
+.projetosSec{
 
     background: linear-gradient(#0c232c 5%, #034c68 45%,#034c68  70%, #0c232c 95%); 
     box-shadow: -0.25rem -0.37rem 1.25rem #00000036, 0.25rem 0.37rem 1.25rem #00000036;
     border-radius: 0.2rem;
     font-family: 'Roboto', sans-serif;
     padding: 0 0 3rem;
+    display: none;
+
 }
 
 @media screen and (max-width:800px) {
     
-    #projetos {
+    .projetosSec {
 
         background: linear-gradient(#0c232c 0%, #034c68 25%, #096a91 50%, #034c68  70%, #0c232c 95%); 
-        display: flex;
         flex-direction: column;
         align-items: center;
+        display: none;
+
+        /* display: flex; */
+
     }
 
 }   

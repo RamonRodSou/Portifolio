@@ -29,3 +29,37 @@ $(document).ready(function() {
         }
     });
 });
+
+$(document).ready(function() {
+    $('.projetobtn').click(function () {
+        var display = $('.displayNone');
+        var displayli = $('.displayNoneli');
+        var btn = $('.projetobtn');
+        var projeto = $('.projetosSec');
+
+        if(display.css('display') === 'none' && displayli.css('display') === 'none'){
+            display.css({
+                'display': 'block',
+            });
+            displayli.css({
+                'display': 'inline',
+            });
+            btn.text('Projetos');
+            projeto.css({
+                'display': 'none',
+            });
+        }
+        else {
+            display.css({
+                'display': 'none',
+            });    
+            displayli.css({
+                'display': 'none',
+            });               
+            projeto.css({
+                'display': 'block',
+            });
+            btn.text('Início');
+        }
+    });
+});

@@ -3,17 +3,15 @@
 
 const btnMobile = document.getElementById ("mobile__btn");
 
-function toggleMenu () {  //toggle
-    if (event.type === "touchstart") event.preventDefault();
+function toggleMenu() {
     const nav = document.getElementById("mobile__menu");
-         nav.classList.toggle("active");
+    nav.classList.toggle("active");
 
-    const active = nav.classList.contains ("active");
-            event.currentTarget.setAttribute("aria-expanded", active);
+    const active = nav.classList.contains("active");
+    event.currentTarget.setAttribute("aria-expanded", active);
     if (active) {
         event.currentTarget.setAttribute("aria-label", "Fechar Menu");
-    }
-    else {
+    } else {
         event.currentTarget.setAttribute("aria-label", "Abrir Menu");
     }
 }
