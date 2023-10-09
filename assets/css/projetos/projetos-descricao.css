@@ -9,8 +9,8 @@
 
     padding: 1rem;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.274);
-    box-shadow: 1px 2px 5px black;
+    background-color: #043342f3;
+    box-shadow: 1px 2px 5px rgb(247, 245, 245);
     display: flex;
     flex-direction: column;
     gap: 1rem;
