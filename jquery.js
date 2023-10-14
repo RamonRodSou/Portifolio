@@ -1,10 +1,9 @@
-
-$(document).ready(function() {
-    $('.sobreMim__span--p').click(function () {
+$(document).ready(async function () {
+    $('.sobreMim__span--p').click(async function () {
         var lerSobreMim = $('.sobreMim__texto');
         var sobreMimTexto = $('.sobreMim__span--p');
 
-        if(lerSobreMim.css('overflow') === 'hidden' && lerSobreMim.css('height') === '300px'){
+        if (lerSobreMim.css('overflow') === 'hidden' && lerSobreMim.css('height') === '300px') {
             lerSobreMim.css({
                 'overflow': 'visible',
                 'height': 'auto'
@@ -21,14 +20,14 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {
-    $('.projetobtn').click(function () {
+$(document).ready(async function () {
+    $('.projetobtn').click(async function () {
         var display = $('.displayNone');
         var displayli = $('.displayNoneli');
         var btn = $('.projetobtn');
         var projeto = $('.projetosSec');
 
-        if(display.css('display') === 'none' && displayli.css('display') === 'none'){
+        if (display.css('display') === 'none' && displayli.css('display') === 'none') {
             display.css({
                 'display': 'block',
             });
@@ -43,10 +42,10 @@ $(document).ready(function() {
         else {
             display.css({
                 'display': 'none',
-            });    
+            });
             displayli.css({
                 'display': 'none',
-            });               
+            });
             projeto.css({
                 'display': 'block',
             });
@@ -55,12 +54,12 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function () {
+$(document).ready(async function () {
     $('.projetos__saibaMais').each(function () {
         var btn = $(this);
         var descricao = btn.closest('.projetos__lista').find('.projetos__descricao--invisivel');
 
-        btn.click(function () {
+        btn.click(async function () {
             if (descricao.css('display') === 'none') {
                 descricao.css({
                     'display': 'flex',
