@@ -1,7 +1,16 @@
+
+.habilidade__img {
+
+    width: 100px;
+    height: 100px;
+} 
+
 @media screen and (max-width:800px) {
 
     .habilidade__img {
 
         width: 200px;
+        height: 200px;
     } 
 }
+

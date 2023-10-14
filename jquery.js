@@ -1,12 +1,3 @@
-// $('.sobreMim__span--p').on('click',lerSobreMim)
-
-// function lerSobreMim () {
-//     $('.sobreMim__texto').css(
-//         {
-//             'overflow':'visible', 
-//             'height': 'auto', 
-//         })   
-// }
 
 $(document).ready(function() {
     $('.sobreMim__span--p').click(function () {
@@ -63,17 +54,6 @@ $(document).ready(function() {
         }
     });
 });
-
-
-// $('.projetos__saibaMais').on('click',saibaNMais)
-
-// function saibaNMais () {
-//     $('.projetos__descricao--invisivel').css(
-//         {
-//             'display':'flex', 
-//         })   
-// }
-
 
 $(document).ready(function () {
     $('.projetos__saibaMais').each(function () {

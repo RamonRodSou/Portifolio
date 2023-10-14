@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/menu/menu-nome.css">
     <link rel="stylesheet" href="assets/css/menu/menu-principal.css">
     <link rel="stylesheet" href="assets/css/menu/menu-lista.css">
-    <link rel="stylesheet" href="assets/css/menu/menu-item.css">
+
     <link rel="stylesheet" href="assets/css/menu/menu-itemNome.css">
     <link rel="stylesheet" href="assets/css/background/banner.css">
     <link rel="stylesheet" href="assets/css/menu-mobile/mobile-menu.css">
@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="assets/css/habilidade/habilidade-lista.css">
     <link rel="stylesheet" href="assets/css/habilidade/habilidade-tecnologia.css">
     <link rel="stylesheet" href="assets/css/habilidade/habilidade-menu.css">
-    <link rel="stylesheet" href="assets/css/habilidade/habilidade-img.css">
     <link rel="stylesheet" href="assets/css/habilidade/habilidade-item.css">
     <link rel="stylesheet" href="assets/css/projetos/projetos.css">
     <link rel="stylesheet" href="assets/css/projetos/projetos-titulo.css">
@@ -46,13 +45,20 @@
     <link rel="stylesheet" href="assets/css/projetos/projetos-img.css">
     <link rel="stylesheet" href="assets/css/projetos/projetos-descricao.css">
     <link rel="stylesheet" href="assets/css/contato/contato.css">
-    <link rel="stylesheet" href="assets/css/contato/contato-redes.css">
     <link rel="stylesheet" href="assets/css/contato/contato-menu.css">
     <link rel="stylesheet" href="assets/css/contato/contato-item.css">
     <link rel="stylesheet" href="assets/css/contato/contato-gitLinkZap.css">
     <link rel="stylesheet" href="assets/css/rodape/copyright.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="preload" href="assets/css/menu/menu-item.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/menu/menu-item.css"></noscript>
+    <link rel="preload" href="assets/css/habilidade/habilidade-img.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/habilidade/habilidade-img.css"></noscript>
+    <link rel="preload" href="assets/css/contato/contato-redes.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/contato/contato-redes.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"></noscript>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
@@ -121,35 +127,35 @@
             <nav class="habilidade__menu"  data-anime="right" >
                 <ul class="habilidade__lista">
                     <li class="habilidade__item">
-                        <img class="habilidade__img" src="./assets/img/icon-html.webp" alt="Logo HTML5">
+                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-html.webp" alt="Logo HTML5">
                         <p>HTML5</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" src="./assets/img/icon-css.webp" alt="Logo CSS3">
+                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-css.webp" alt="Logo CSS3">
                         <p>CSS3</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" src="./assets/img/icon-js.webp" alt="Logo JavaScript">
+                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-js.webp" alt="Logo JavaScript">
                         <p>JavaScript</p>
                     </li> 
                     <li class="habilidade__item">
-                        <img class="habilidade__img" src="./assets/img/icon-react.webp" alt="Logo React">
+                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-react.webp" alt="Logo React">
                         <p>React</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" src="./assets/img/icon-mysql.webp" alt="Logo MySQL">
+                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-mysql.webp" alt="Logo MySQL">
                         <p>MySQL</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" src="./assets/img/icon-python.webp" alt="Logo Python">
+                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-python.webp" alt="Logo Python">
                         <p>Python</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" src="./assets/img/icon-git.webp" alt="Logo Git">
+                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-git.webp" alt="Logo Git">
                         <p>Git</p>
                     </li>
                     <li class="habilidade__item habilidade__item-carrosel">
-                        <img src="./assets/img/icon-html.webp" class="habilidade__img" alt="Logo HTML5" >
+                        <img src="./assets/img/icon-html.webp" class="habilidade__img" width="200" height="200" alt="Logo HTML5" >
                         <p>HTML5</p>
                     </li>
                 </ul>   
@@ -164,7 +170,7 @@
             <nav class="projetos__menu"  data-anime="right" >
                 <ul class="projetos__item"> 
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/kidflix.webp" alt="Foto do site KidFlix" class="projetos__img">
+                        <img src="./assets/img/Projetos/kidflix.webp" alt="Foto do site KidFlix"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h4 class="projetos__nome">KidFlix</h4>
                             <button class="projetos__saibaMais">Saiba Mais</button>
@@ -181,7 +187,7 @@
                         </div>
                     </li> 
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/AluraGeek.webp" alt="Foto do site  AluraGeek" class="projetos__img">
+                        <img src="./assets/img/Projetos/AluraGeek.webp" alt="Foto do site  AluraGeek"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h4 class="projetos__nome">AluraGeek</h4>
                             <button class="projetos__saibaMais">Saiba Mais</button>
@@ -199,7 +205,7 @@
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/Formulario-hooks.webp" alt="Foto do site Formulario de Cadastro com Hooks" class="projetos__img">
+                        <img src="./assets/img/Projetos/Formulario-hooks.webp" alt="Foto do site Formulario de Cadastro com Hooks"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h4 class="projetos__nome">Formulário</h4>
                             <button class="projetos__saibaMais">Saiba Mais</button>
@@ -218,7 +224,7 @@
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/Organo.webp" alt="Foto do site Organo" class="projetos__img">
+                        <img src="./assets/img/Projetos/Organo.webp" alt="Foto do site Organo"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h4 class="projetos__nome">Organo</h4>
                             <button class="projetos__saibaMais">Saiba Mais</button>
@@ -236,7 +242,7 @@
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/OlaMundo.webp" alt="Foto do site Olá Mundo" class="projetos__img">
+                        <img src="./assets/img/Projetos/OlaMundo.webp" alt="Foto do site Olá Mundo"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h4 class="projetos__nome">Ola Mundo</h4>
                             <button class="projetos__saibaMais">Saiba Mais</button>
@@ -253,7 +259,7 @@
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/alurinha.webp" alt="Foto do site Alurinha cursos" class="projetos__img">
+                        <img src="./assets/img/Projetos/alurinha.webp" alt="Foto do site Alurinha cursos"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h4 class="projetos__nome">Alurinha</h4>
                             <button class="projetos__saibaMais">Saiba Mais</button>
@@ -271,7 +277,7 @@
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/DoguinhoCrud.webp" alt="Foto do site Formulario Doguinho Crud" class="projetos__img">
+                        <img src="./assets/img/Projetos/DoguinhoCrud.webp" alt="Foto do site Formulario Doguinho Crud"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h4 class="projetos__nome">Crud</h4>
                             <button class="projetos__saibaMais">Saiba Mais</button>
@@ -289,7 +295,7 @@
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/fruta.webp" alt="Foto do site de Frutas & Frutos" class="projetos__img">
+                        <img src="./assets/img/Projetos/fruta.webp" alt="Foto do site de Frutas & Frutos"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h4 class="projetos__nome">Frutas & Frutos</h4>
                             <button class="projetos__saibaMais">Saiba Mais</button>
