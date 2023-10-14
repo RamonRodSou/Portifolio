@@ -1,5 +1,8 @@
 .mobile__item--link{
 
     text-decoration: none;
-    color: #ffffff;    
+    color: #ffffff; 
+    display: block;
+    width: 100%;
+    height: 100%;
 }

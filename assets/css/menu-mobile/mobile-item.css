@@ -2,7 +2,7 @@
 
 
     .mobile__item {
-
+        display: block;
         padding: 1rem;
         font-family: Roboto, sans-serif;
         transition: 1s;
@@ -25,4 +25,5 @@
         background: #4595b4;
         
     }
+
 }

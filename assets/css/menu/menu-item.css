@@ -23,11 +23,12 @@
 
 .menu__item:last-child {
 
-    background: #0793de;
+    background: #0476b3;
     border-radius: 15px;
     padding: 10px 35px;
+    color: #FFF;
 }
 .menu__item:last-child:hover {
 
-    background: #7acdf9;
+    background: #099ae8;
 }
