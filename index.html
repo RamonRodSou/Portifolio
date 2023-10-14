@@ -65,7 +65,7 @@
 <body>
     <header>
         <div id="menu" aria-label="Menu">
-            <h1 class="menu__nome " >Desenvolvedor Ramon Rodrigues</h1>
+            <a class="menu__nome" href="https://www.linkedin.com/in/ramonrodsouza/">Dev Ramon Rodrigues</a>
             <nav id="menu__principal">
                 <ul class="menu__lista">                   
                     <li class="menu__item displayNoneli">
@@ -79,8 +79,8 @@
             </nav>
         </div>
         <div>
-            <nav id="mobile__menu"> 
-                <span id="mobile__btn" aria-haspopup="menu" aria-controls="menu" aria-expanded="false"></span>
+            <nav id="mobile__menu" role="navigation"> 
+                <span id="mobile__btn" aria-haspopup="mobile__menu" aria-controls="mobile__menu" aria-expanded="false"></span>
                 <ul class="mobile__lista" role="menu">                   
                     <li class="mobile__item displayNone"><a class="mobile__item--link" href="#habilidade">Habilidades</a></li>
                     <li class="mobile__item displayNone"><a class="mobile__item--link" href="#contatos">Contato</a></li>
@@ -91,10 +91,10 @@
     </header>
          <div class="banner "> </div>
     <section id="apresentacao" class="container-section displayNone">
-        <h2 class="apresentacao__titulo" data-anime="left">Desenvolvedor Front-End</h2>
+        <h1 class="apresentacao__titulo" data-anime="left">Desenvolvedor Front-End</h1>
     </section>
     <section id="sobre-mim" class="container-section displayNone">
-        <h3 class="titulo" data-anime="down">Sobre mim</h3>
+        <h2 class="titulo" data-anime="down">Sobre mim</h2>
         <span class="sobreMim__texto" data-anime="left"> 
             <p>Hoje, gostaria de compartilhar com todos vocês a minha jornada emocionante em busca da "tal" transição de carreira.</p>        
             <p>Minha trajetória até aqui:</p>
@@ -121,37 +121,37 @@
     </section>
     <section  id="habilidade" class="container-section displayNone" >   
         <div id="habilidade__titulo">
-            <h3 class="titulo" data-anime="down">Habilidades</h3>
+            <h2 class="titulo" data-anime="down">Habilidades</h2>
         </div>
         <div id="habilidade__tecnologia">
             <nav class="habilidade__menu"  data-anime="right" >
                 <ul class="habilidade__lista">
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-html.webp" alt="Logo HTML5">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-html.webp" alt="Logo HTML5">
                         <p>HTML5</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-css.webp" alt="Logo CSS3">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-css.webp" alt="Logo CSS3">
                         <p>CSS3</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-js.webp" alt="Logo JavaScript">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-js.webp" alt="Logo JavaScript">
                         <p>JavaScript</p>
                     </li> 
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-react.webp" alt="Logo React">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-react.webp" alt="Logo React">
                         <p>React</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-mysql.webp" alt="Logo MySQL">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-mysql.webp" alt="Logo MySQL">
                         <p>MySQL</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-python.webp" alt="Logo Python">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-python.webp" alt="Logo Python">
                         <p>Python</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="200" height="200" src="./assets/img/icon-git.webp" alt="Logo Git">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-git.webp" alt="Logo Git">
                         <p>Git</p>
                     </li>
                     <li class="habilidade__item habilidade__item-carrosel">
@@ -164,7 +164,7 @@
     </section>
     <section  id="projetos" class="container-section projetosSec" >   
         <div id="projetos__titulo">
-            <h3 class="titulo" data-anime="down">Projetos</h3>
+            <h2 class="titulo" data-anime="down">Projetos</h2>
         </div>
         <div id="projetos__tecnologia">
             <nav class="projetos__menu"  data-anime="right" >
@@ -172,7 +172,7 @@
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/kidflix.webp" alt="Foto do site KidFlix"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
-                            <h4 class="projetos__nome">KidFlix</h4>
+                            <h3 class="projetos__nome">KidFlix</h3>
                             <button class="projetos__saibaMais">Saiba Mais</button>
                         </div>
                         <div class="projetos__descricao--invisivel">
@@ -189,7 +189,7 @@
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/AluraGeek.webp" alt="Foto do site  AluraGeek"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
-                            <h4 class="projetos__nome">AluraGeek</h4>
+                            <h3 class="projetos__nome">AluraGeek</h3>
                             <button class="projetos__saibaMais">Saiba Mais</button>
                         </div>
                         <div class="projetos__descricao--invisivel">
@@ -207,7 +207,7 @@
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/Formulario-hooks.webp" alt="Foto do site Formulario de Cadastro com Hooks"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
-                            <h4 class="projetos__nome">Formulário</h4>
+                            <h3 class="projetos__nome">Formulário</h3>
                             <button class="projetos__saibaMais">Saiba Mais</button>
                         </div>
                         <div class="projetos__descricao--invisivel">
@@ -226,7 +226,7 @@
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/Organo.webp" alt="Foto do site Organo"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
-                            <h4 class="projetos__nome">Organo</h4>
+                            <h3 class="projetos__nome">Organo</h3>
                             <button class="projetos__saibaMais">Saiba Mais</button>
                         </div>
                         <div class="projetos__descricao--invisivel">
@@ -244,7 +244,7 @@
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/OlaMundo.webp" alt="Foto do site Olá Mundo"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
-                            <h4 class="projetos__nome">Ola Mundo</h4>
+                            <h3 class="projetos__nome">Ola Mundo</h3>
                             <button class="projetos__saibaMais">Saiba Mais</button>
                         </div>
                         <div class="projetos__descricao--invisivel">
@@ -261,7 +261,7 @@
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/alurinha.webp" alt="Foto do site Alurinha cursos"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
-                            <h4 class="projetos__nome">Alurinha</h4>
+                            <h3 class="projetos__nome">Alurinha</h3>
                             <button class="projetos__saibaMais">Saiba Mais</button>
                         </div>
                         <div class="projetos__descricao--invisivel">
@@ -279,7 +279,7 @@
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/DoguinhoCrud.webp" alt="Foto do site Formulario Doguinho Crud"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
-                            <h4 class="projetos__nome">Crud</h4>
+                            <h3 class="projetos__nome">Crud</h3>
                             <button class="projetos__saibaMais">Saiba Mais</button>
                         </div>
                         <div class="projetos__descricao--invisivel">
@@ -297,7 +297,7 @@
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/fruta.webp" alt="Foto do site de Frutas & Frutos"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
-                            <h4 class="projetos__nome">Frutas & Frutos</h4>
+                            <h3 class="projetos__nome">Frutas & Frutos</h3>
                             <button class="projetos__saibaMais">Saiba Mais</button>
                         </div>
                         <div class="projetos__descricao--invisivel">
@@ -317,15 +317,15 @@
     </section>
     <section id="contatos" class="container-section displayNone" data-anime="down">
         <div class="contato">
-            <h3 class="titulo">Contato</h3>
+            <h2 class="titulo">Contato</h2>
             <nav class="contato__menu">
                 <ul class="contato__redes">
                     <li class="contato__item"><a href="https://github.com/RamonRodSou"><img src="./assets/img/icon_github.webp" class="contato__github"
-                            alt="Logo e Link do Github"></a></li>
+                            alt="Logo e Link do Github" width="50" height="50"></a></li>
                     <li class="contato__item"><a href="https://www.linkedin.com/in/ramonrodsouza/"><img src="./assets/img/icon_linkedin.webp" class="contato__linkdin"
-                            alt="Logo e Link do Linkdin"></a></li>
+                            alt="Logo e Link do Linkdin" width="50" height="50"></a></li>
                     <li class="contato__item"><a href="https://api.whatsapp.com/send/?phone=5521972923210&text&app_absent=0"><img
-                            src="./assets/img/icon_whatsapp.webp" class="contato__whatsapp" alt="Logo e Link do Whatsapp"></a></li>
+                            src="./assets/img/icon_whatsapp.webp" class="contato__whatsapp" alt="Logo e Link do Whatsapp" width="50" height="50"></a></li>
                 </ul>
           </nav>
         </div>

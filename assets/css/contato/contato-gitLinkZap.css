@@ -1,6 +1,5 @@
 .contato__github {
 
-    width: 55px;
     margin: 8px;
     transition: 1s background;
     cursor: pointer;
@@ -9,7 +8,6 @@
 
 .contato__linkdin {
 
-    width: 50px;
     margin: 10px;
     transition: 1s background;
     cursor: pointer;
@@ -18,7 +16,6 @@
 
 .contato__whatsapp {
 
-    width: 3.4rem;
     margin: 0.6rem;
     transition: 1s background;
     cursor: pointer;
