@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Portfólio" content="Portfólio de design criativo e projetos inspiradores.">
+    <link rel="icon" href="assets/img/icone.webp" type="image/png">
 
-    <title>Dev Ramon Rodrigues</title>
+    <title>RodSou Dev</title>
     <link rel="stylesheet" href="assets/css/reset/reset.css">
     <link rel="stylesheet" href="assets/css/geral/style.css">
     <link rel="stylesheet" href="assets/css/data-anime/data-anime.css">
@@ -14,9 +15,12 @@
     <link rel="stylesheet" href="assets/css/menu/menu-nome.css">
     <link rel="stylesheet" href="assets/css/menu/menu-principal.css">
     <link rel="stylesheet" href="assets/css/menu/menu-lista.css">
-
     <link rel="stylesheet" href="assets/css/menu/menu-itemNome.css">
-    <link rel="stylesheet" href="assets/css/background/banner.css">
+    <link rel="stylesheet" href="assets/css/banner/banner.css">
+    <link rel="stylesheet" href="assets/css/headerBtn/headerBtn-projetoBtn.css">
+    <link rel="stylesheet" href="assets/css/headerBtn/headerBtn-redes.css">
+    <link rel="stylesheet" href="assets/css/headerBtn/headerBtn-menu.css">
+    <link rel="stylesheet" href="assets/css/headerBtn/headerBtn.css">
     <link rel="stylesheet" href="assets/css/menu-mobile/mobile-menu.css">
     <link rel="stylesheet" href="assets/css/menu-mobile/mobile-lista.css">
     <link rel="stylesheet" href="assets/css/menu-mobile/mobile-btn.css">
@@ -26,6 +30,7 @@
     <link rel="stylesheet" href="assets/css/apresetacao/apresentasao-titulo.css">
     <link rel="stylesheet" href="assets/css/sobreMim/sobreMim.css">
     <link rel="stylesheet" href="assets/css/sobreMim/sobreMim-texto.css">
+    <link rel="stylesheet" href="assets/css/sobreMim/sobreMim-foto.css">
     <link rel="stylesheet" href="assets/css/habilidade/habilidade.css">
     <link rel="stylesheet" href="assets/css/habilidade/habilidade-lista.css">
     <link rel="stylesheet" href="assets/css/habilidade/habilidade-tecnologia.css">
@@ -38,7 +43,8 @@
     <link rel="stylesheet" href="assets/css/projetos/projetos-link.css">
     <link rel="stylesheet" href="assets/css/projetos/projetos-sobre.css">
     <link rel="stylesheet" href="assets/css/projetos/projetos-spanSobre.css">
-    <link rel="stylesheet" href="assets/css/projetos/projetos-saibaMais.css">
+    <link rel="stylesheet" href="assets/css/projetos/projetos-btnDiv.css">
+    <link rel="stylesheet" href="assets/css/projetos/projetos-btn.css">
     <link rel="stylesheet" href="assets/css/projetos/projetos-nome.css">
     <link rel="stylesheet" href="assets/css/projetos/projetos-lista.css">
     <link rel="stylesheet" href="assets/css/projetos/projetos-item.css">
@@ -48,6 +54,12 @@
     <link rel="stylesheet" href="assets/css/contato/contato-menu.css">
     <link rel="stylesheet" href="assets/css/contato/contato-item.css">
     <link rel="stylesheet" href="assets/css/contato/contato-gitLinkZap.css">
+    <link rel="stylesheet" href="assets/css/faleconosco/faleconosco-div.css">    
+    <link rel="stylesheet" href="assets/css/faleconosco/faleconosco.css">    
+    <link rel="stylesheet" href="assets/css/faleconosco/faleconosco-form.css">
+    <link rel="stylesheet" href="assets/css/faleconosco/faleconosco-input.css">
+    <link rel="stylesheet" href="assets/css/faleconosco/faleconosco-btn.css">
+    <link rel="stylesheet" href="assets/css/faleconosco/faleconosco-textarea.css">
     <link rel="stylesheet" href="assets/css/rodape/copyright.css">
 
     <link rel="preload" href="assets/css/menu/menu-item.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -63,9 +75,9 @@
 </head>
 
 <body>
-    <header>
-        <div id="menu" aria-label="Menu">
-            <a class="menu__nome" href="https://www.linkedin.com/in/ramonrodsouza/">Dev Ramon Rodrigues</a>
+    <header id="menu">
+        <div  class="menu" aria-label="Menu">
+            <a class="menu__nome" href="https://www.linkedin.com/in/ramonrodsouza/">RodSou Dev</a>
             <nav id="menu__principal">
                 <ul class="menu__lista">                   
                     <li class="menu__item displayNoneli">
@@ -78,46 +90,82 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <nav id="mobile__menu" role="navigation"> 
+        <div class="menu__mobile">
+            <a class="menu__nome menu__mobile--nome" href="https://www.linkedin.com/in/ramonrodsouza/">RodSou Dev</a> 
+            <nav id="mobile__menu" role="navigation">
                 <span id="mobile__btn" aria-label="Botão de Menu"></span>
                 <ul class="mobile__lista" role="menu">                   
-                    <li class="mobile__item displayNone"><a class="mobile__item--link" href="#habilidade">Habilidades</a></li>
-                    <li class="mobile__item displayNone"><a class="mobile__item--link" href="#contatos">Contato</a></li>
-                    <li class="mobile__item projetobtn ">Projetos</li>
+                    <li class="mobile__item"><a class="mobile__item--link" href="#habilidade">Habilidades</a></li>
+                    <li class="mobile__item"><a class="mobile__item--link" href="#contatos">Contato</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
-         <div class="banner "> </div>
-    <section id="apresentacao" class="container-section displayNone">
+    <section >
+        <img  class="banner" src="assets/css/banner/banner.webp" alt="">
+    </section>
+    <section id="apresentacao" class="container-section">
         <h1 class="apresentacao__titulo" data-anime="left">Desenvolvedor Front-End</h1>
     </section>
+    <Section class="headerBtn" >
+        <div class="headerBtn__projeto">
+            <button class="headerBtn__projetoBtn projetobtn ">Projetos</button>
+        </div>               
+        <nav class="headerBtn__menu">
+            <ul class="headerBtn__redes">
+                <li class="headerBtn__item">
+                    <a href="https://github.com/RamonRodSou">
+                        <img src="./assets/img/icon_github.webp" alt="Logo e Link do Github" width="30" height="30">
+                    </a>
+                </li>
+                <li class="headerBtn__item">
+                    <a href="https://www.linkedin.com/in/ramonrodsouza/">
+                        <img src="./assets/img/icon_linkedin.webp" alt="Logo e Link do Linkdin" width="30" height="30">
+                    </a>
+                </li>
+                <li class="headerBtn__item">
+                    <a href="https://wa.me/5521972923210?text=Ola+Ramon+Rodrigues%2C+gostaria+de+informa%C3%A7%C3%B5es+sobre+aplicativos+e+p%C3%A1ginas+web+para+meu+empreendimento.">
+                        <img src="./assets/img/icon_whatsapp.webp" alt="Logo e Link do Whatsapp" width="30" height="30">
+                    </a>
+                </li>
+                <li class="headerBtn__item">
+                    <a href="https://www.youtube.com/@Devzinho">
+                        <img src="./assets/img/icon_youtube.webp" alt="Logo e Link do Canal RodSou Youtube" width="30" height="30">
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </Section>
     <section id="sobre-mim" class="container-section displayNone">
         <h2 class="titulo" data-anime="down">Sobre mim</h2>
-        <span class="sobreMim__texto" data-anime="left"> 
-            <p>Hoje, gostaria de compartilhar com todos vocês a minha jornada emocionante em busca da "tal" transição de carreira.</p>        
-            <p>Minha trajetória até aqui:</p>
-            <p>Atualmente, sou eletricista de profissão, mas em outubro de 2022, decidi mergulhar em um novo mundo ao iniciar um curso de lógica de programação com a tecnologia JAVA. Foi um passo ousado, mas desde então, tenho vivido uma incrível jornada de aprendizado e crescimento.</p>
-            <p>Em novembro do mesmo ano, fui agraciado com uma oportunidade única: o programa One Next Education, em parceria com a Oracle e a Alura. Durante esse programa, tive a oportunidade de expandir meus horizontes no mundo da tecnologia. Fui capaz de mergulhar profundamente em áreas como Front-End e Data Science, e o mais importante, conhecer pessoas incríveis e formar novas amizades.</p>       
-            <p>Minhas habilidades e conhecimentos:</p>
-            <ul>
-                <li>Git/GitHub: Aprendi a importância da colaboração e do controle de versão em projetos de software.</li>
-                <li>HTML, CSS, JavaScript: Fundamentos cruciais para qualquer desenvolvedor web.</li>
-                <li>jQuery me permite criar interfaces de usuário interativas e atraentes, melhorando a usabilidade e a funcionalidade de sites e aplicativos da web</li>
-                <li>React: Uma biblioteca JavaScript que me permitiu criar interfaces de usuário incríveis.</li>
-                <li>Axios: Conhecimento valioso para fazer solicitações HTTP de maneira eficiente.</li>
-                <li>Conhecimento básico em JAVA: Minha jornada começou com essa linguagem e continua a ser uma parte importante do meu aprendizado.</li>
-                <li>MySQL, Oracle: Estou atualmente estudando bancos de dados, incluindo MySQL e Oracle, para aprimorar meu conhecimento em gerenciamento de dados.</li>
-                <li>Python: Estou me aventurando na análise de dados com Python, explorando seu vasto potencial.</li>
-                <li>Graduação em Análise e Desenvolvimento de Sistemas: Estou comprometido em expandir meu conhecimento acadêmico, e atualmente estou cursando Análise e Desenvolvimento de Sistemas na Unicesumar.</li>
-            </ul>
-        </span>
-        <span class="sobreMim__span">
-            <p class="sobreMim__span--p">
-                Ler mais
-            </p>
-        </span>
+        <div class="sobreMim">
+            <div class="sobreMim__foto" data-anime="right">
+                <img src="assets/img/Eu-Redes-NV.png" alt="Foto do autor" width="500" height="500"/>
+            </div>
+            <div class="sobreMim__texto" data-anime="left"> 
+                <p>Olá, me chamo Ramon Rodrigues e seja bem-vindo ao meu portfólio.</p>        
+                <p>Vou compartilhar um pouco sobre mim:</p>
+                <p>Iniciei na programação estudando lógica de programação com a tecnologia JAVA. Foi um passo ousado, mas desde então, tenho vivido uma incrível jornada de aprendizado e crescimento.</p>
+                <p>Em novembro do mesmo ano, fui agraciado com uma oportunidade única: o programa One Next Education, em parceria com a Oracle e a Alura. Durante esse programa, tive a oportunidade de expandir meus horizontes no mundo da tecnologia. Fui capaz de mergulhar profundamente em áreas como Front-End e Data Science, e o mais importante, conhecer pessoas incríveis e formar novas amizades.</p>       
+                <p>Minhas habilidades e conhecimentos:</p>
+                <ul>
+                    <li>Git/GitHub: Aprendi a importância da colaboração e do controle de versão em projetos de software.</li>
+                    <li>HTML, CSS, JavaScript: Fundamentos cruciais para qualquer desenvolvedor web.</li>
+                    <li>jQuery me permite criar interfaces de usuário interativas e atraentes, melhorando a usabilidade e a funcionalidade de sites e aplicativos da web</li>
+                    <li>React: Uma biblioteca JavaScript que me permitiu criar interfaces de usuário incríveis.</li>
+                    <li>Axios: Conhecimento valioso para fazer solicitações HTTP de maneira eficiente.</li>
+                    <li>Conhecimento básico em JAVA: Minha jornada começou com essa linguagem e continua a ser uma parte importante do meu aprendizado.</li>
+                    <li>MySQL, Oracle: Estou atualmente estudando bancos de dados, incluindo MySQL e Oracle, para aprimorar meu conhecimento em gerenciamento de dados.</li>
+                    <li>Python: Estou me aventurando na análise de dados com Python, automação de tarefas e aplicativos mobile, explorando seu vasto potencial.</li>
+                    <li>Graduação em Análise e Desenvolvimento de Sistemas: Estou comprometido em expandir meu conhecimento acadêmico, e atualmente estou cursando Análise e Desenvolvimento de Sistemas na Unicesumar.</li>
+                </ul>
+            </div>
+            <span class="sobreMim__span">
+                <p class="sobreMim__span--p">
+                    Ler mais
+                </p>
+            </span>
+        </div>
     </section>
     <section  id="habilidade" class="container-section displayNone" >   
         <div id="habilidade__titulo">
@@ -173,7 +221,11 @@
                         <img src="./assets/img/Projetos/kidflix.webp" alt="Foto do site KidFlix"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">KidFlix</h3>
-                            <button class="projetos__saibaMais">Saiba Mais</button>
+                            <div  class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://kidflix.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                            </div>
+                                                    
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
@@ -181,16 +233,18 @@
                                 <p class="projetos__sobre">Foi aí que a inspiração me atingiu: por que não criar uma aplicação que me permitisse escolher cuidadosamente o que meus filhos podem assistir? Assim, nasceu a minha aplicação, desenvolvida com React JS, que me oferece o poder de selecionar e adicionar apenas o conteúdo que considero apropriado e enriquecedor para meus filhos.</p>
                                 <p class="projetos__sobre">Com essa aplicação, não só posso proporcionar um ambiente seguro e divertido para meus filhos, mas também compartilhar essa experiência com outras famílias que buscam uma maneira mais fácil de controlar o que seus filhos assistem. Estou entusiasmado em fornecer uma solução que reflete meu compromisso com a educação e o entretenimento responsável das próximas gerações,</p>
                             </span>
-                            <span>
-                                <a href="https://kidflix.vercel.app/" target="_blank" class="projetos__link">Projeto</a>
-                            </span>
+                            
                         </div>
                     </li> 
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/AluraGeek.webp" alt="Foto do site  AluraGeek"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">AluraGeek</h3>
-                            <button class="projetos__saibaMais">Saiba Mais</button>
+                            <div  class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://ramonrodsou.github.io/AluraGeek/admin/public/index.html" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                            </div>
+                                                    
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
@@ -199,16 +253,18 @@
                                 <p class="projetos__sobre">Com o AluraGeek, tenho orgulho de oferecer uma experiência de compra online abrangente e segura. Os administradores têm controle total sobre o catálogo de produtos, garantindo que os clientes tenham acesso a uma ampla variedade de opções. Ao mesmo tempo, os clientes podem criar contas, realizar compras e desfrutar de um ambiente amigável e funcional.</p>
                                 <p class="projetos__sobre">Estou entusiasmado em compartilhar o AluraGeek como um exemplo de como a educação e o aprendizado contínuo podem inspirar soluções criativas e práticas para desafios do mundo real. Este projeto reflete meu compromisso em aplicar o conhecimento adquirido por meio da educação online para criar soluções significativas e inovadoras.</p>
                             </span>
-                            <span>
-                                <a href="https://ramonrodsou.github.io/AluraGeek/admin/public/index.html" target="_blank" class="projetos__link">Projeto</a>
-                            </span>
+                            
                         </div>
                     </li>
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/Formulario-hooks.webp" alt="Foto do site Formulario de Cadastro com Hooks"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Formulário</h3>
-                            <button class="projetos__saibaMais">Saiba Mais</button>
+                            <div  class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://react-hooks-liard.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                            </div>
+                                                    
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
@@ -218,34 +274,40 @@
                                 <p class="projetos__sobre">Estou entusiasmado em compartilhar este projeto, demonstrando como o React e os hooks podem tornar a criação de formulários uma tarefa eficiente e agradável. Espero que esta demonstração inspire outros desenvolvedores a explorar as possibilidades dessa tecnologia e criar experiências ainda mais impressionantes</p>
 
                             </span>
-                            <span>
-                                <a href="https://react-hooks-liard.vercel.app/" target="_blank" class="projetos__link">Projeto</a>
-                            </span>
+                            
                         </div>
                     </li>
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/Organo.webp" alt="Foto do site Organo"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Organo</h3>
-                            <button class="projetos__saibaMais">Saiba Mais</button>
+                            <div  class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://organo2-nine.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                            </div>
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
+                            <div>
                                 <p class="projetos__sobre">Este projeto é um exemplo empolgante do que pode ser alcançado com a tecnologia React JS. Foi desenvolvido durante um curso ministrado pela Alura, que proporcionou uma experiência de aprendizado prática e enriquecedora.</p>
+                            </div>
+                                                    
                                 <p class="projetos__sobre">A ideia por trás deste projeto é a gestão de colaboradores e times de forma eficiente e intuitiva. Cada colaborador pode ser cadastrado com informações como nome, cargo e uma foto pessoal. Além disso, cada colaborador é associado a um time específico. A singularidade deste projeto reside na possibilidade de personalizar cada time com uma cor distinta.</p>
                                 <p class="projetos__sobre">No momento do cadastro do time, os usuários têm a liberdade de escolher a cor que melhor representa o seu grupo. Isso não apenas torna a identificação visual mais fácil, mas também adiciona um toque de personalização que torna o projeto mais envolvente.</p>
                                 <p class="projetos__sobre">Ao utilizar React JS, conseguimos criar uma experiência de usuário suave e responsiva. Os conceitos e técnicas aprendidos durante o curso da Alura permitiram que este projeto se tornasse uma aplicação prática e funcional para a gestão de colaboradores e times.</p>
                             </span>
-                            <span>
-                                <a href="https://organo2-nine.vercel.app/" target="_blank" class="projetos__link">Projeto</a>
-                            </span>
+                            
                         </div>
                     </li>
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/OlaMundo.webp" alt="Foto do site Olá Mundo"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Ola Mundo</h3>
-                            <button class="projetos__saibaMais">Saiba Mais</button>
+                            <div  class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://ola-mundo-delta-three.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                            </div>
+                                                    
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
@@ -253,16 +315,18 @@
                                 <p class="projetos__sobre">Utilizando a flexibilidade e a capacidade de personalização do React, pude criar um espaço onde posso compartilhar minha experiência e conhecimento com você. No 'Olá Mundo', você encontrará detalhes sobre minha jornada, minhas paixões e interesses em tecnologia e desenvolvimento.</p>
                                 <p class="projetos__sobre">Além disso, este projeto oferece informações atualizadas sobre as mais recentes tendências e tecnologias no mundo da programação, proporcionando uma visão geral do cenário tecnológico em constante evolução.</p>
                             </span>
-                            <span>
-                                <a href="https://ola-mundo-delta-three.vercel.app/" target="_blank" class="projetos__link">Projeto</a>
-                            </span>
+                            
                         </div>
                     </li>
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/alurinha.webp" alt="Foto do site Alurinha cursos"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Alurinha</h3>
-                            <button class="projetos__saibaMais">Saiba Mais</button>
+                            <div  class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://alurinhaflexbox.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                            </div>
+                                                    
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
@@ -271,16 +335,18 @@
                                 <p class="projetos__sobre">Além disso, o foco na responsividade é um destaque do 'Alurinha'. A capacidade de adaptar-se a uma variedade de dispositivos, desde desktops até dispositivos móveis, é uma característica crucial na criação de uma experiência de usuário consistente e amigável.</p>
                                 <p class="projetos__sobre">Este projeto é um exemplo notável de como o HTML e o CSS podem ser utilizados de forma criativa e prática para treinar e aprimorar habilidades em design responsivo e display Flex. O 'Alurinha' é um testemunho do compromisso com a aprendizagem contínua e a busca pela excelência na criação de interfaces web atrativas e funcionais.</p>
                             </span>
-                            <span>
-                                <a href="https://alurinhaflexbox.vercel.app/" target="_blank" class="projetos__link">Projeto</a>
-                            </span>
+                            
                         </div>
                     </li>
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/DoguinhoCrud.webp" alt="Foto do site Formulario Doguinho Crud"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Crud</h3>
-                            <button class="projetos__saibaMais">Saiba Mais</button>
+                            <div  class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://form-crud-blond.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                            </div>
+                                                    
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
@@ -289,16 +355,18 @@
                                 <p class="projetos__sobre">O projeto concentra-se principalmente na gestão de usuários, reconhecendo a importância de um sistema de autenticação sólido e eficaz. Isso não apenas garante a segurança dos dados dos usuários, mas também proporciona uma experiência de usuário aprimorada.</p>
                                 <p class="projetos__sobre">O 'Doguinho' representa o compromisso com a excelência no desenvolvimento web, demonstrando como JavaScript, HTML e CSS podem ser combinados para criar uma aplicação funcional e prática. Este projeto é uma prova do poder da tecnologia para resolver desafios complexos, como a gestão de informações de usuários e produtos de forma eficaz e eficiente.</p>
                             </span>
-                            <span>
-                                <a href="https://form-crud-blond.vercel.app/" target="_blank" class="projetos__link">Projeto</a>
-                            </span>
+                            
                         </div>
                     </li>
                     <li class="projetos__lista">
                         <img src="./assets/img/Projetos/fruta.webp" alt="Foto do site de Frutas & Frutos"  width="100" height="100" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Frutas & Frutos</h3>
-                            <button class="projetos__saibaMais">Saiba Mais</button>
+                            <div  class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://fruta-e-frutocss.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                            </div>
+                                                    
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
@@ -306,26 +374,52 @@
                                 <p class="projetos__sobre">Ao utilizar HTML como base, o 'Fruto & Frutos' estabelece uma estrutura sólida e semântica para seu conteúdo, garantindo que a informação seja apresentada de maneira clara e acessível. Além disso, o CSS desempenha um papel crucial na estilização do site, demonstrando a importância da estética e do layout na experiência do usuário.</p>
                                 <p class="projetos__sobre">Este projeto oferece uma exploração cuidadosa das propriedades e recursos do CSS, permitindo que sejam aplicadas técnicas de design, layout e formatação de forma prática. A ênfase na arquitetura e no CSS como principais tecnologias do 'Fruto & Frutos' reflete o compromisso com o aprendizado contínuo e a busca pela excelência no desenvolvimento web.</p>
                             </span>
-                            <span>
-                                <a href="https://fruta-e-frutocss.vercel.app/" target="_blank" class="projetos__link">Projeto</a>
-                            </span>
+                            
                         </div>
                     </li>
                 </ul>
             </nav>
         </div> 
     </section>
+    <section id="faleconosco" class="container-section" data-anime="down">
+        <div class="faleconosco">
+            <h2 class="titulo">Fale Conosco</h2>
+            <form  class="faleconosco__form" action="https://formspree.io/f/xqkvwoaj" method="POST">
+                <div class="faleconosco__div input-faleconosco__invalido" >
+                    <input name="name" id="nome" class="faleconosco__input form__nome" type="name" placeholder="Nome" data-nome  data-tipo="nome" required>
+                    <!-- <label class="faleconosco__label" for="nome">Nome</label> -->
+                    <!-- <span class="input-mensagem-erro">Esse campo não pode estar vazio</span> -->
+                </div>
+                <div class="faleconosco__div input-faleconosco__invalido" >
+                    <input id="nome" class="faleconosco__input form__nome" type="email" name="email" placeholder="Email" data-email  data-tipo="email" required>
+                    <!-- <label class="faleconosco__label" for="email">Email</label> -->
+                    <!-- <span class="input-mensagem-erro">Esse campo não pode estar vazio</span> -->
+                </div>
+                <div class="faleconosco__div input-container__invalido" >
+                    <!-- <span class="input-mensagem-erro">Esse campo não pode estar vazio</span> -->
+                    <textarea name="message"  class="faleconosco__textarea form__texto"  cols="32" rows="10" placeholder="Escreva sua mensagem" required></textarea>
+                </div>
+                <button type="submit" class="faleconosco__btn">Enviar mensagem</button>
+            </form> 
+        </div>
+    </section> 
     <section id="contatos" class="container-section displayNone" data-anime="down">
         <div class="contato">
             <h2 class="titulo">Contato</h2>
             <nav class="contato__menu">
                 <ul class="contato__redes">
-                    <li class="contato__item"><a href="https://github.com/RamonRodSou"><img src="./assets/img/icon_github.webp" class="contato__github"
-                            alt="Logo e Link do Github" width="50" height="50"></a></li>
-                    <li class="contato__item"><a href="https://www.linkedin.com/in/ramonrodsouza/"><img src="./assets/img/icon_linkedin.webp" class="contato__linkdin"
-                            alt="Logo e Link do Linkdin" width="50" height="50"></a></li>
-                    <li class="contato__item"><a href="https://api.whatsapp.com/send/?phone=5521972923210&text&app_absent=0"><img
-                            src="./assets/img/icon_whatsapp.webp" class="contato__whatsapp" alt="Logo e Link do Whatsapp" width="50" height="50"></a></li>
+                    <li class="contato__item"><a href="https://github.com/RamonRodSou"><img src="./assets/img/icon_github.webp"
+                            alt="Logo e Link do Github" width="50" height="50"></a>
+                    </li>
+                    <li class="contato__item"><a href="https://www.linkedin.com/in/ramonrodsouza/"><img src="./assets/img/icon_linkedin.webp"
+                            alt="Logo e Link do Linkdin" width="50" height="50"></a>
+                    </li>
+                    <li class="contato__item"><a href="https://wa.me/5521972923210?text=Ola+Ramon+Rodrigues%2C+gostaria+de+informa%C3%A7%C3%B5es+sobre+aplicativos+e+p%C3%A1ginas+web+para+meu+empreendimento."><img
+                            src="./assets/img/icon_whatsapp.webp"  alt="Logo e Link do Whatsapp" width="50" height="50"></a>
+                    </li>
+                    <li class="contato__item"><a href="https://wa.me/5521972923210?text=Ola+Ramon+Rodrigues%2C+gostaria+de+informa%C3%A7%C3%B5es+sobre+aplicativos+e+p%C3%A1ginas+web+para+meu+empreendimento."><img
+                        src="./assets/img/icon_youtube.webp" alt="Logo e Link do Canal RodSou Youtube" width="50" height="50"></a>
+                </li>
                 </ul>
           </nav>
         </div>
@@ -335,6 +429,7 @@
     </footer>
     <script type="module" src="./index.js"></script>   
     <script type="module" src="./jquery.js"></script>   
+    <script type="module" src="./validacao.js"></script>   
 
 </body>
 

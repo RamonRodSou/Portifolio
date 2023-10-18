@@ -1,0 +1,36 @@
+.faleconosco__btn {
+
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+    height: 62px;
+    background-color: #12333f51;
+    border: none;
+    box-shadow: 1px 1px 6px #7a92d57e;
+    margin: 1rem 0;
+    color: #fefefe;
+    cursor: pointer;
+    width: 100%;
+    transition:all 1ms ;
+}
+
+.faleconosco__btn:hover {
+    
+    color: #FFF;
+    background-color: #26657d51;
+
+
+}
+
+.faleconosco__btn:active {
+    
+    color: #FFF;
+    background-color: #5dabca51;
+
+
+}

@@ -1,0 +1,17 @@
+.faleconosco__form {
+
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width: 50%;
+    margin: 1rem auto;
+
+}
+
+
+@media screen and (max-width:800px) {
+    .faleconosco__form {
+        width: 80%;    
+    }
+    
+}

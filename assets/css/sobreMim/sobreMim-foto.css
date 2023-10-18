@@ -1,0 +1,61 @@
+.sobreMim__foto {
+    margin: 2.5rem 3rem 0 1.5rem;
+    float: left;
+    width: 30rem;
+    height: 30rem;
+}
+
+
+.sobreMim__foto img {
+
+
+    border-radius: 50rem;
+    box-shadow: 10px 10px 30px #9b47dc;
+    
+}
+
+@media screen and (max-width:1200px){
+
+    .sobreMim__foto img {
+        width:25rem;
+        height:25rem;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+
+    .sobreMim__foto img {
+        width:20rem;
+        height:20rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .sobreMim__foto {
+
+        margin: 0 0 2rem;
+    }
+    
+
+    .sobreMim__foto img {
+        width: 30rem;
+        height: 30rem;
+
+    }
+}
+@media screen and (max-width:687px) {
+
+    .sobreMim__foto, .sobreMim__foto img{
+        width:20rem;
+        height:20rem;
+    }
+}
+
+@media screen and (max-width:455px) {
+
+    .sobreMim__foto, .sobreMim__foto img{
+        width:15rem;
+        height:15rem;
+    }
+}

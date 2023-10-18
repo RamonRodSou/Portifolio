@@ -1,0 +1,40 @@
+
+
+.projetos__btn{
+
+    border:none;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px black;
+    width: 5.6rem;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    text-shadow: 2px 1px 5px rgb(90, 86, 86);
+    color: rgb(5, 77, 105);
+  text-align: center;
+    font-size: 0.9rem;
+  }
+ 
+  .projetos__btn:hover{ 
+
+    background-color: rgb(9, 92, 148);
+    color: #fff;
+
+  }
+
+  .projetos__btn:active{ 
+
+    background-color: rgb(58, 138, 191);
+    color: #fff;
+
+  }
+
+  .projetos__btn a {
+
+    width: 100%;
+  }
+  @media screen and (max-width:885px) {
+
+    
+}

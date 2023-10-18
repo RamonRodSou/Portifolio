@@ -26,10 +26,22 @@
     color: #a6c9e8;
 }
 
+.menu__mobile--nome {
+
+    display: none;
+}
+
 @media screen and (max-width:800px) {
     
     .menu__nome {
-
+        position: absolute;
+        margin: 0.5rem 1rem;
         font-size: 0.8rem;
     }
+
+    .menu__mobile--nome {
+
+        display: inline;
+    }
+    
 }

@@ -1,3 +1,6 @@
+/* ---------- SobreMim Hidden / Visible ------------*/
+
+
 $(document).ready(async function () {
     $('.sobreMim__span--p').click(async function () {
         var lerSobreMim = $('.sobreMim__texto');
@@ -20,42 +23,12 @@ $(document).ready(async function () {
     });
 });
 
-$(document).ready(async function () {
-    $('.projetobtn').click(async function () {
-        var display = $('.displayNone');
-        var displayli = $('.displayNoneli');
-        var btn = $('.projetobtn');
-        var projeto = $('.projetosSec');
 
-        if (display.css('display') === 'none' && displayli.css('display') === 'none') {
-            display.css({
-                'display': 'block',
-            });
-            displayli.css({
-                'display': 'inline',
-            });
-            btn.text('Projetos');
-            projeto.css({
-                'display': 'none',
-            });
-        }
-        else {
-            display.css({
-                'display': 'none',
-            });
-            displayli.css({
-                'display': 'none',
-            });
-            projeto.css({
-                'display': 'block',
-            });
-            btn.text('Início');
-        }
-    });
-});
+/* ---------- Btn LerMais / Btn Ler Menos ------------*/
+
 
 $(document).ready(async function () {
-    $('.projetos__saibaMais').each(function () {
+    $('.saibaMais').each(function () {
         var btn = $(this);
         var descricao = btn.closest('.projetos__lista').find('.projetos__descricao--invisivel');
 
@@ -72,5 +45,53 @@ $(document).ready(async function () {
                 btn.text('Saiba mais');
             }
         });
+    });
+});
+
+
+/* ---------- BTN Projeto / Inicio ------------*/
+
+$(document).ready(async function () {
+    $('.projetobtn').click(async function () {
+        var display = $('.displayNone');
+        var displayli = $('.displayNoneli');
+        var displayli = $('.displayNoneli');
+        // var menu = $('.menu');
+        var btn = $('.projetobtn');
+        var projeto = $('.projetosSec');
+
+        if (display.css('display') === 'none' && displayli.css('display') === 'none') {
+            display.css({
+                'display': 'block',
+            });
+            displayli.css({
+                'display': 'inline',
+            });
+
+            btn.text('Projetos');
+            projeto.css({
+                'display': 'none',
+            });
+            // menu.css({
+            //     'position': 'relative',
+            // });
+        }
+        else {
+            display.css({
+                'display': 'none',
+            });
+            displayli.css({
+                'display': 'none',
+            });
+            projeto.css({
+                'display': 'block',
+            });
+            // menu.css({
+            //     'position': 'relative',
+            // });
+            
+            btn.text('Início');
+            
+        }
     });
 });

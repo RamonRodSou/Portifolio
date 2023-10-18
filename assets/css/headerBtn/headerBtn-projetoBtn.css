@@ -1,0 +1,44 @@
+
+
+@media screen and (max-width:800px) {
+
+    .headerBtn__projeto {
+        justify-content: end;
+        transition: top 0.3s;        
+    }
+
+    .headerBtn__projetoBtn{
+        background-color: #099ae8;
+        padding: 0.5rem;
+        border-radius: 10px;
+        margin:0 1rem;
+        border: none;
+        box-shadow: 1px 1px 5px #9bd3ff;
+        color: #fff;
+        cursor:pointer ;
+        transition: 1ms;
+        animation: piscar 1s infinite;
+
+    } 
+
+    .headerBtn__projeto-scrool {
+        position: fixed;
+        top:10px;
+    }
+
+
+      @keyframes piscar {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+}
+
+

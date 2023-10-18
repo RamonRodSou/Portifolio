@@ -1,0 +1,7 @@
+.headerBtn__redes {
+    
+    display: flex;
+    flex-grow: 2;
+    gap:0.5rem;
+    opacity: 0;
+}

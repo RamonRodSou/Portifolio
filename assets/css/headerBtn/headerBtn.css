@@ -1,0 +1,19 @@
+.headerBtn {
+
+     display: none;
+}
+
+
+@media screen and (max-width:800px) {
+
+
+     .headerBtn {
+          
+          display: flex;
+          flex-direction:row-reverse;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+          z-index: 9;
+     }
+}

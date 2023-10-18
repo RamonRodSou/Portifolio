@@ -5,10 +5,16 @@
 
 @media screen and (max-width:800px) {
 
+    .menu__mobile {
+        position: relative;
+        /* display: flex;
+        flex-direction: column; */
+    }
     #mobile__menu {
 
         display:flex;
         text-align: center;
+        flex-direction: column;
     }
 
     #mobile__menu.active #mobile__btn {

@@ -1,0 +1,20 @@
+
+.banner {
+    
+	position: absolute;
+    opacity: 0.5;
+    width: 100%;
+    -webkit-mask-image:  linear-gradient(to top, transparent 40%, #0c232c 70%);
+    z-index: -1;
+} 
+
+
+
+@media screen and (max-width:800px) {
+
+    .banner {
+    
+        -webkit-mask-image:  linear-gradient(to top, transparent 30%, #0c232c 90%);        
+        
+    } 
+}

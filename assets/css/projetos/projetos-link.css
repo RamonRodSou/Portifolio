@@ -1,14 +1,10 @@
 .projetos__link {
 
-    color: azure;
+    text-shadow: 2px 1px 5px rgb(90, 86, 86);
+    color: rgb(5, 77, 105);
     text-decoration: none;
-    cursor: pointer;
-    border: 1px solid  rgb(151, 188, 243);
-    opacity: 0.7;
-    border-radius: 10px;
-    padding: 0.3rem;
-    background-color: rgb(0, 0, 0);
-    font-size: 0.7rem;
+    
+
 }
 
 .projetos__link:hover {
