@@ -1,14 +1,16 @@
+
+
 @media screen and (max-width:800px) {
 
     .habilidade__menu {
-            
+
         animation-name: carrocel;
         animation-duration: 10s;
         animation-iteration-count: infinite;
-        width: 895%;
+        width: 999%;
     }
     /* Para 3 tecnologias */
-    /* @keyframes carrocel { 
+    /* @keyframes carrocel {
 
         0%{ margin-left:  0; }
         20%{ margin-left:  0; }
@@ -19,15 +21,17 @@
         100%{ margin-left:  -300%; }
     } */
 
-      @keyframes carrocel { 
+      @keyframes carrocel {
 
-        0%{ margin-left:  0; } /* Sempre regular do primeiro para o segundo */
-        14.3%{ margin-left:  -110%; }
-        28.5%{ margin-left:  -225%; }
-        42.8%{ margin-left:  -340%; }
-        57%{ margin-left:  -454%; }
-        71.4%{ margin-left:  -569%; }
-        85.8%{ margin-left:  -684%; }
-        100%{ margin-left:  -792%; }
-    } 
+        0%{ margin-left:  0%; } /* Sempre regular do primeiro para o se7ugundo */
+        12.5%{ margin-left: -115%; }
+        25%{ margin-left:  -223%; }
+        37.5%{ margin-left:  -333%; }
+        50%{ margin-left:  -450%; }
+        62.5%{ margin-left:  -565%; }
+        75%{ margin-left:  -676%; }
+        87.5%{ margin-left:  -790%; }
+        100%{ margin-left:  -904%; }
+
+    }
 }

@@ -1,4 +1,4 @@
-#sobre-mim{
+#sobreMim{
     
     box-shadow: 0.25rem 0.37rem 1.25rem #00000036;
     background-color: #0c232c92;
@@ -23,7 +23,7 @@
 }
 @media screen and (max-width:480px) {
 
-    #sobre-mim{
+    #sobreMim{
         
         text-align: center;
     }

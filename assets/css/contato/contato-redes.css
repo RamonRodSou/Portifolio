@@ -5,3 +5,25 @@
         
     padding: 3.1rem 1.25rem;
 }
+
+.contato__redes{
+
+    display: flex;
+    justify-content: space-around;
+        
+    padding: 3.1rem 1.25rem;
+}
+
+
+@media screen and (max-width: 470px){
+
+    .contato__redes{
+
+        justify-content: center;
+        padding: 3.1rem 1.25rem;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4rem;
+    }
+
+}
