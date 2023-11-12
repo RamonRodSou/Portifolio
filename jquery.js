@@ -1,4 +1,4 @@
-/* ---------- SobreMim Hidden / Visible ------------*/
+/* ---------- Btn LerMais / Btn Ler Menos ------------*/
 
 
 $(document).ready(async function () {
@@ -19,12 +19,13 @@ $(document).ready(async function () {
                 'height': '300px'
             });
             sobreMimTexto.text('Ler mais');
+            $('html, body').animate({ scrollTop: 0 }, 'fast');
         }
     });
 });
 
 
-/* ---------- Btn LerMais / Btn Ler Menos ------------*/
+/* ---------- Saiba Mais / Saiba mens Projetos------------*/
 
 
 $(document).ready(async function () {
@@ -56,7 +57,6 @@ $(document).ready(async function () {
         var display = $('.displayNone');
         var displayli = $('.displayNoneli');
         var displayli = $('.displayNoneli');
-        // var menu = $('.menu');
         var btn = $('.projetobtn');
         var projeto = $('.projetosSec');
 
@@ -72,9 +72,6 @@ $(document).ready(async function () {
             projeto.css({
                 'display': 'none',
             });
-            // menu.css({
-            //     'position': 'relative',
-            // });
         }
         else {
             display.css({
@@ -85,11 +82,7 @@ $(document).ready(async function () {
             });
             projeto.css({
                 'display': 'block',
-            });
-            // menu.css({
-            //     'position': 'relative',
-            // });
-            
+            });       
             btn.text('Início');
             
         }

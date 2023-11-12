@@ -28,6 +28,10 @@ html {
     padding-top: 3.1rem;
 }
 
+.fe{
+    display: none;
+}
+
 @media screen and (max-width:253px){
 
     .titulo {

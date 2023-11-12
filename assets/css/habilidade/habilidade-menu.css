@@ -7,7 +7,7 @@
         animation-name: carrocel;
         animation-duration: 10s;
         animation-iteration-count: infinite;
-        width: 999%;
+        width: 1053%;
     }
     /* Para 3 tecnologias */
     /* @keyframes carrocel {
@@ -19,11 +19,11 @@
         75%{ margin-left:  -200%; }
         90%{ margin-left:  -200%; }
         100%{ margin-left:  -300%; }
-    } */
+    } 
 
-      @keyframes carrocel {
+     @keyframes carrocel {
 
-        0%{ margin-left:  0%; } /* Sempre regular do primeiro para o se7ugundo */
+        0%{ margin-left:  0%; } /* Sempre regular do primeiro para o se7ugundo 
         12.5%{ margin-left: -115%; }
         25%{ margin-left:  -223%; }
         37.5%{ margin-left:  -333%; }
@@ -33,5 +33,21 @@
         87.5%{ margin-left:  -790%; }
         100%{ margin-left:  -904%; }
 
-    }
+    } */
+
+    @keyframes carrocel {
+
+       0%{  margin-left:  35%; }   /*  HTML */
+      11%{  margin-left:   -80%; }   /*  CSS3 */
+      22%{  margin-left:  -193%; }   /*  JS */
+      33%{  margin-left:  -306%; }   /*  TS */
+      44%{  margin-left:  -419%; }   /*  REACT */
+      55%{  margin-left:  -530%; }   /*  MYSQL */
+      66%{  margin-left:  -642%; }   /*  PYTHON */
+      77%{  margin-left:  -758%; }   /*  GIT */
+      88%{  margin-left:  -871%; }   /*  WORDPRESS */
+      100%{ margin-left:  -984%; }   /*  HTML */
+
+
+  }
 }

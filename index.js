@@ -88,12 +88,12 @@ if(target.length) {
 /* ---------- Efeito de Scrool FIXE BTN ------------*/
 window.addEventListener("scroll", function() {
 
-    const scrollTop = window.pageYOffset;
+    const scrollTop = window.pageYOffset  ;
     const redes = this.document.querySelector(".headerBtn__redes")
     const button = document.querySelector(".headerBtn");
     const menu = document.querySelector(".menu")
 
-    if (scrollTop > button.offsetTop) {
+    if (scrollTop > button.offsetTop   / 20) {
 
         button.style.position = "fixed";
         button.style.top = "0";

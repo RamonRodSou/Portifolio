@@ -17,7 +17,7 @@
 }
 
 .sobreMim__span {
-    display: none;
+    display: none;  
 }
 
 @media screen and (max-width:800px) {

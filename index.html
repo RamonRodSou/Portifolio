@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="RodSouDevb" content="Portfólio de design criativo e projetos inspiradores.">
+    <meta name="description" content="RodSou Dev Portfólio de design criativo e projetos inspiradores.">
     <link rel="icon" href="assets/img/icone.webp" type="image/png">
 
     <title>RodSou Dev</title>
@@ -87,6 +87,7 @@
 
 <body>
     <header>
+        <p class="fe">Que Deus abençoe o seu dia e lhe conceda sucesso em todos os seus projetos! Ass: RodSou Dev</p>
         <div class="menu" aria-label="menu">
             <a class="menu__nome" href="https://www.linkedin.com/in/ramonrodsouza/" target="_blank">RodSou Dev</a>
             <nav id="menu__principal">
@@ -104,14 +105,15 @@
         <div class="menu__mobile">
             <a class="menu__nome menu__mobile--nome" href="https://www.linkedin.com/in/ramonrodsouza/" target="_blank">RodSou Dev</a> 
             <nav id="mobile__menu" role="navigation">
-                <span id="mobile__btn" aria-label="Botão de Menu"></span>
+                <span id="mobile__btn"></span>
                 <ul class="mobile__lista" role="menu">                   
                     <li class="mobile__item"><a class="mobile__item--link" href="#habilidade">Habilidades</a></li>
                     <li class="mobile__item"><a class="mobile__item--link" href="#contatos">Contato</a></li>
                 </ul>
             </nav>
         </div>
-    <section >
+    </header>
+    <section>
         <img class="banner" src="assets/css/banner/banner.webp" alt="Banner principal " width="full" height="full">
     </section>
     <section id="apresentacao" class="container-section">
@@ -198,6 +200,10 @@
                         <p>JavaScript</p>
                     </li> 
                     <li class="habilidade__item">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-typescript.svg" alt="Logo MySQL">
+                        <p>Typescript</p>
+                    </li>
+                    <li class="habilidade__item">
                         <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-react.svg" alt="Logo React">
                         <p>React</p>
                     </li>
@@ -233,7 +239,7 @@
             <nav class="projetos__menu"  data-anime="right" >
                 <ul class="projetos__item"> 
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/kidflix.webp" alt="Foto do site KidFlix"  width="100%" height="220px" class="projetos__img">
+                        <img src="./assets/img/Projetos/kidflix.webp" alt="Foto do site KidFlix"  width="300" height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">KidFlix</h3>
                             <div  class="projetos__btnDiv">
@@ -252,7 +258,7 @@
                         </div>
                     </li> 
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/AluraGeek.webp" alt="Foto do site  AluraGeek"  width="100%" height="220px" class="projetos__img">
+                        <img src="./assets/img/Projetos/AluraGeek.webp" alt="Foto do site  AluraGeek"  width="300" height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">AluraGeek</h3>
                             <div  class="projetos__btnDiv">
@@ -272,7 +278,7 @@
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/Formulario-hooks.webp" alt="Foto do site Formulario de Cadastro com Hooks"  width="100%%" height="220px" class="projetos__img">
+                        <img src="./assets/img/Projetos/Formulario-hooks.webp" alt="Foto do site Formulario de Cadastro com Hooks"  width="300" height="220px" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Formulário</h3>
                             <div  class="projetos__btnDiv">
@@ -293,7 +299,7 @@
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/Organo.webp" alt="Foto do site Organo"  width="100%" height="220px" class="projetos__img">
+                        <img src="./assets/img/Projetos/Organo.webp" alt="Foto do site Organo"  width="300" height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Organo</h3>
                             <div  class="projetos__btnDiv">
@@ -315,7 +321,7 @@
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/OlaMundo.webp" alt="Foto do site Olá Mundo"  width="100%" height="220px" class="projetos__img">
+                        <img src="./assets/img/Projetos/OlaMundo.webp" alt="Foto do site Olá Mundo"  width="300" height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Ola Mundo</h3>
                             <div  class="projetos__btnDiv">
@@ -334,7 +340,7 @@
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/alurinha.webp" alt="Foto do site Alurinha cursos"  width="100%" height="220px" class="projetos__img">
+                        <img src="./assets/img/Projetos/alurinha.webp" alt="Foto do site Alurinha cursos"  width="300" height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Alurinha</h3>
                             <div  class="projetos__btnDiv">
@@ -354,7 +360,7 @@
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/DoguinhoCrud.webp" alt="Foto do site Formulario Doguinho Crud"  width="100%" height="220px" class="projetos__img">
+                        <img src="./assets/img/Projetos/DoguinhoCrud.webp" alt="Foto do site Formulario Doguinho Crud"  width="300" height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Crud</h3>
                             <div  class="projetos__btnDiv">
@@ -374,14 +380,13 @@
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/fruta.webp" alt="Foto do site de Frutas & Frutos"  width="100%" height="220px" class="projetos__img">
+                        <img src="./assets/img/Projetos/fruta.webp" alt="Foto do site de Frutas & Frutos"  width="300" height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Frutas & Frutos</h3>
-                            <div  class="projetos__btnDiv">
+                            <div class="projetos__btnDiv">
                                 <button class="projetos__btn saibaMais">Saiba Mais</button>
                                 <a href="https://fruta-e-frutocss.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
-                            </div>
-                                                    
+                            </div>                                    
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
@@ -389,7 +394,57 @@
                                 <p class="projetos__sobre">Ao utilizar HTML como base, o 'Fruto & Frutos' estabelece uma estrutura sólida e semântica para seu conteúdo, garantindo que a informação seja apresentada de maneira clara e acessível. Além disso, o CSS desempenha um papel crucial na estilização do site, demonstrando a importância da estética e do layout na experiência do usuário.</p>
                                 <p class="projetos__sobre">Este projeto oferece uma exploração cuidadosa das propriedades e recursos do CSS, permitindo que sejam aplicadas técnicas de design, layout e formatação de forma prática. A ênfase na arquitetura e no CSS como principais tecnologias do 'Fruto & Frutos' reflete o compromisso com o aprendizado contínuo e a busca pela excelência no desenvolvimento web.</p>
                             </span>
-                            
+                        </div>
+                    </li>
+                    <li class="projetos__lista">
+                        <img src="./assets/img/Projetos/Encrip.webp" alt="Foto do site de Frutas & Frutos"  width="300" height="220" class="projetos__img">
+                        <div class="projetos__descricao">
+                            <h3 class="projetos__nome">Encriptador</h3>
+                            <div class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://ramonrodsou.github.io/Challenge-Encriptador/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                            </div>                                    
+                        </div>
+                        <div class="projetos__descricao--invisivel">
+                            <span class="projetos__spanSobre">
+                                <p class="projetos__sobre">Com imenso entusiasmo, compartilho o resultado de um desafio significativo proposto pela Alura, que representou meu primeiro e notável teste independente. Nesse projeto desafiador, enfrentei a responsabilidade de conduzir o desenvolvimento por conta própria. Aproveitei a oportunidade para transformar ideias em realidade, enfrentando alguns obstáculos que me levaram a extensivas pesquisas para superá-los.</p>
+                                <p class="projetos__sobre">Ao final, os frutos desse esforço foram notáveis. Este projeto não apenas testou minhas habilidades, mas também se revelou uma oportunidade valiosa para aprimorar meu entendimento sobre o Modelo de Objeto de Documento (DOM). Fui desafiado a compreender minuciosamente como acessar tags, classes e IDs, além de manipulá-los utilizando JavaScript.</p>
+                                <p class="projetos__sobre">O aprendizado adquirido ao longo desse processo foi extraordinário, consolidando e expandindo consideravelmente meu conhecimento em DOM. Estou satisfeito em compartilhar que, no desfecho, todos os elementos se alinharam perfeitamente, resultando em um projeto bem-sucedido que representa não apenas um marco pessoal, mas também um avanço tangível em minha jornada de desenvolvimento.</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="projetos__lista">
+                        <img src="./assets/img/Projetos/Drone.webp" alt="Foto do site de Frutas & Frutos"  width="300" height="220" class="projetos__img">
+                        <div class="projetos__descricao">
+                            <h3 class="projetos__nome">Drone Midia</h3>
+                            <div class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                            </div>                                    
+                        </div>
+                        <div class="projetos__descricao--invisivel">
+                            <span class="projetos__spanSobre">
+                                <p class="projetos__sobre">Apresento com satisfação o "Drone Mídia" (nome fictício), um projeto desenvolvido sob medida para uma renomada empresa de drones. O desafio consistiu em criar uma plataforma que destacasse de forma envolvente e profissional todo o portfólio e os serviços oferecidos pela empresa.</p>
+                                <p class="projetos__sobre">Dada a natureza sensível da clientela, optei por preservar a privacidade dos clientes e, portanto, não disponibilizo o link do projeto. O "Drone Mídia" foi meticulosamente concebido utilizando a versatilidade e eficiência do WordPress como base, proporcionando uma experiência online excepcional.</p>
+                                <p class="projetos__sobre">A jornada de desenvolvimento envolveu a implementação de recursos e funcionalidades que refletem a inovação e a expertise da empresa no mundo dos drones. A estrutura do site foi projetada para cativar o público, apresentando de forma clara e atraente o extenso portfólio da empresa e seus serviços especializados.</p>
+                                <p class="projetos__sobre">Ao superar os desafios e incorporar as melhores práticas, o "Drone Mídia" se tornou um veículo eficaz para a empresa se destacar no cenário digital, transmitindo confiança e profissionalismo aos visitantes. Este projeto não só atendeu, mas excedeu as expectativas, solidificando meu compromisso em entregar soluções de alta qualidade e impacto visual para os clientes.</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="projetos__lista">
+                        <img src="./assets/img/Projetos/Barb.webp" alt="Foto do site de Frutas & Frutos"  width="300" height="220" class="projetos__img">
+                        <div class="projetos__descricao">
+                            <h3 class="projetos__nome">Barber Shop</h3>
+                            <div class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                            </div>                                    
+                        </div>
+                        <div class="projetos__descricao--invisivel">
+                            <span class="projetos__spanSobre">
+                                <p class="projetos__sobre">Tenho o prazer de compartilhar o projeto "Barber Shop" (nome fictício), uma iniciativa dedicada a elevar a presença online de uma barbearia renomada. A missão foi clara: criar uma plataforma que não apenas apresentasse de forma envolvente o extenso portfólio da barbearia, mas também destacasse seus serviços distintos de maneira elegante e atrativa.</p>
+                                <p class="projetos__sobre">Em respeito à confidencialidade do cliente, optei por não disponibilizar o link do projeto, prezando pela privacidade e segurança. O "Barber Shop" foi cuidadosamente construído utilizando a versatilidade e eficácia do WordPress, proporcionando uma experiência online marcante.</p>
+                                <p class="projetos__sobre">Ao longo do processo de desenvolvimento, concentrei-me em integrar elementos visuais e funcionais que refletissem a autenticidade e o profissionalismo da barbearia. O site foi estrategicamente elaborado para cativar os visitantes, apresentando de maneira clara e atraente não apenas os serviços oferecidos, mas também a atmosfera única e os talentos da equipe.</p>
+                                <p class="projetos__sobre">O resultado final do "Barber Shop" não apenas atendeu, mas superou as expectativas, proporcionando à barbearia uma presença online distinta e memorável. Este projeto, fundamentado na solidez do WordPress, reforça meu comprometimento em criar soluções digitais que não só respondem às necessidades do cliente, mas também elevam a experiência do usuário a um patamar superior.</p>
+                            </span>
                         </div>
                     </li>
                 </ul>
@@ -398,7 +453,7 @@
     </section>
     <section id="faleconosco" class="container-section" data-anime="down">
         <div class="faleconosco">
-            <h2 class="titulo">Fale Conosco</h2>
+            <h2 class="titulo">Fale Comigo</h2>
             <form  class="faleconosco__form" action="https://formspree.io/f/xqkvwoaj" method="POST">
                 <div class="faleconosco__div input-faleconosco__invalido" >
                     <input name="name" id="nome" class="faleconosco__input form__nome" type="name" placeholder="Nome" data-nome  data-tipo="nome" required>
@@ -406,7 +461,7 @@
                     <!-- <span class="input-mensagem-erro">Esse campo não pode estar vazio</span> -->
                 </div>
                 <div class="faleconosco__div input-faleconosco__invalido" >
-                    <input id="nome" class="faleconosco__input form__nome" type="email" name="email" placeholder="Email" data-email  data-tipo="email" required>
+                    <input id="email" class="faleconosco__input form__nome" type="email" name="email" placeholder="Email" data-email  data-tipo="email" required>
                     <!-- <label class="faleconosco__label" for="email">Email</label> -->
                     <!-- <span class="input-mensagem-erro">Esse campo não pode estar vazio</span> -->
                 </div>
