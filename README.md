@@ -24,30 +24,30 @@ Como entrar em contato:
 
 💡 Funcionalidades Principais
 Atualmente, grande parte do projeto foi criado em html e css, há algumas funcionalidades com JavaScript usando o DOM, e com Jquery.
-O projeto está bem responsivo, com diferenciacao da versao mobile para web, com algumas funcoes a mais no mobile.
+O projeto está bem responsivo, com diferenciação da versão mobile para web, com algumas funções a mais no mobile.
 
 Efeitos:
-  Quando dar scroll para baixo ou para cima, as section aparecem ou somem. Feito usando Css
+Quando dar scroll para baixo ou para cima, as section aparecem ou somem. Feito usando Css
 
 Fale Comigo:
-  section Fale Comigo, recebe Nome,Email e Mensagem, ao enviar, consome uma Api onde a mensagem é enviada para meu e-mail pessoal.
+section Fale Comigo, recebe Nome, Email e Mensagem, ao enviar, consome uma Api onde a mensagem é enviada para meu e-mail pessoal.
 
-Na versao Mobile foi inclementado:
- - Carrosel em Habilidades usando o Css.
- - Botao Ler Mais/ Ler Menos em Sobre Mim, usando o Jquery.
- - Botao Projeto, quando clicado muda as sections para display: none - usando o DOM ( Document Object Model ).
-    - section Sobre Mim, Habilidades, Contato.
+Na versao Mobile foi incrementado:
+- Carrossel em Habilidades usando o Css.
+- Botao Ler Mais/ Ler Menos em Sobre Mim, usando o Jquery.
+- Botao Projeto, quando clicado muda as sections para display: none - usando o DOM ( Document Object Model ).
+- section Sobre Mim, Habilidades, Contato.
 - Botao Projeto, quando clicado muda as section Projeto para display: flex - usando o DOM e
-  Muda nome do botao Projeto para Início usando o Jquery. 
-  
- - Botao Início, quando clicado muda as sections para display: flex - usando o DOM ( Document Object Model ).
-    - section Sobre Mim, Habilidades, Contato.
-- Botao Início, quando clicado muda as section Projeto para display: none - usando o DOM e
-  Muda nome do botao Início para Projeto usando o Jquery.
+Muda nome do botao Projeto para Início usando o Jquery.
 
-- Menu Hamburguer - Feito usando JavaScript
-- Header Fixo, quando dar scroll para baixo, aparece uma barra de header fixo no top, que contem minhas redes sociais, e botao projeto.
-  Quando volta ao topo o heade fixo some e volta ao normal. Feito usando JavaScript.
+- Botao Início, quando clicado muda as sections para display: flex - usando o DOM ( Document Object Model ).
+- section Sobre Mim, Habilidades, Contato.
+- Botao Início, quando clicado muda as section Projeto para display: none - usando o DOM e
+Muda nome do botao Início para Projeto usando o Jquery.
+
+- Menu Hambúrguer - Feito usando JavaScript
+- Header Fixo, quando dar scroll para baixo, aparece uma barra de header fixo no top, que contem minhas redes sociais, e botão projeto.
+Quando volta ao topo o heade fixo some e volta ao normal. Feito usando JavaScript.
   
 🚀 Para próximas versões
 
