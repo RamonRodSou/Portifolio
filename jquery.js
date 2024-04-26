@@ -97,7 +97,7 @@ $(document).ready(async function () {
 
             menu.css({
                 'position:': 'absolute',
-                'top':'0'
+                'top':'0' 
             })
         }
     });
