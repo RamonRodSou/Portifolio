@@ -64,8 +64,8 @@
     <link rel="stylesheet" href="assets/css/contato/contato-item.css">
     <link rel="stylesheet" href="assets/css/contato/contato-gitLinkZap.css">
 
-    <link rel="stylesheet" href="assets/css/faleconosco/faleconosco-div.css">    
-    <link rel="stylesheet" href="assets/css/faleconosco/faleconosco.css">    
+    <link rel="stylesheet" href="assets/css/faleconosco/faleconosco-div.css">
+    <link rel="stylesheet" href="assets/css/faleconosco/faleconosco.css">
     <link rel="stylesheet" href="assets/css/faleconosco/faleconosco-form.css">
     <link rel="stylesheet" href="assets/css/faleconosco/faleconosco-input.css">
     <link rel="stylesheet" href="assets/css/faleconosco/faleconosco-btn.css">
@@ -74,15 +74,27 @@
     <link rel="stylesheet" href="assets/css/rodape/copyright.css">
 
     <link rel="preload" href="assets/css/menu/menu-item.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/menu/menu-item.css"></noscript>
-    <link rel="preload" href="assets/css/habilidade/habilidade-img.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/habilidade/habilidade-img.css"></noscript>
-    <link rel="preload" href="assets/css/contato/contato-redes.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/contato/contato-redes.css"></noscript>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/menu/menu-item.css">
+    </noscript>
+    <link rel="preload" href="assets/css/habilidade/habilidade-img.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/habilidade/habilidade-img.css">
+    </noscript>
+    <link rel="preload" href="assets/css/contato/contato-redes.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/contato/contato-redes.css">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    </noscript>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -91,38 +103,43 @@
         <div class="menu" aria-label="menu">
             <a class="menu__nome" href="https://www.linkedin.com/in/ramonrodsouza/" target="_blank">RodSou Dev</a>
             <nav id="menu__principal">
-                <ul class="menu__lista">                   
+                <ul class="menu__lista">
                     <li class="menu__item displayNoneli">
                         <a class="menu__item--nome" href="#habilidade">Habilidades</a>
                     </li>
                     <li class="menu__item displayNoneli">
-                        <a class="menu__item--nome "  href="#contatos">Contatos</a>
+                        <a class="menu__item--nome " href="#contatos">Contatos</a>
                     </li>
                     <li class="menu__item projetobtn">Projetos</li>
                 </ul>
             </nav>
         </div>
         <div class="menu__mobile">
-            <a class="menu__nome menu__mobile--nome" href="https://www.linkedin.com/in/ramonrodsouza/" target="_blank">RodSou Dev</a> 
+            <a class="menu__nome menu__mobile--nome" href="https://www.linkedin.com/in/ramonrodsouza/"
+                target="_blank">RodSou Dev</a>
             <nav id="mobile__menu" role="navigation">
                 <span id="mobile__btn"></span>
-                <ul class="mobile__lista" role="menu">                   
+                <ul class="mobile__lista" role="menu">
                     <li class="mobile__item"><a class="mobile__item--link" href="#habilidade">Habilidades</a></li>
                     <li class="mobile__item"><a class="mobile__item--link" href="#contatos">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section>
-        <img class="banner" src="assets/css/banner/banner.webp" alt="Banner principal " width="full" height="full">
-    </section>
-    <section id="apresentacao" class="container-section">
-        <h1 class="apresentacao__titulo" data-anime="left">Desenvolvedor Front-End</h1>
-    </section>
-    <Section class="headerBtn" >
+
+    <sectton id="apresentacaoSec" class="container-section">
+        <div>
+            <img class="banner" src="assets/css/banner/banner.webp" alt="Banner principal " width="full" height="full">
+        </div>
+        <div id="apresentacao" class="container-div">
+            <h1 class="apresentacao__titulo" data-anime="left">Desenvolvedor Front-End</h1>
+        </div>
+    </sectton>
+
+    <Section class="headerBtn">
         <div class="headerBtn__projeto">
             <button class="headerBtn__projetoBtn projetobtn ">Projetos</button>
-        </div>               
+        </div>
         <nav class="headerBtn__menu">
             <ul class="headerBtn__redes">
                 <li class="headerBtn__item">
@@ -136,41 +153,55 @@
                     </a>
                 </li>
                 <li class="headerBtn__item">
-                    <a href="https://wa.me/5521972923210?text=Ola+Ramon+Rodrigues%2C+gostaria+de+informa%C3%A7%C3%B5es+sobre+aplicativos+e+p%C3%A1ginas+web+para+meu+empreendimento." target="_blank">
+                    <a href="https://wa.me/5521972923210?text=Ola+Ramon+Rodrigues%2C+gostaria+de+informa%C3%A7%C3%B5es+sobre+aplicativos+e+p%C3%A1ginas+web+para+meu+empreendimento."
+                        target="_blank">
                         <img src="./assets/img/icon_whatsapp.svg" alt="Logo e Link do Whatsapp" width="30" height="30">
                     </a>
                 </li>
                 <li class="headerBtn__item">
                     <a href="https://www.youtube.com/@Devzinho" target="_blank">
-                        <img src="./assets/img/icon_youtube.svg" alt="Logo e Link do Canal RodSou Youtube" width="30" height="30">
+                        <img src="./assets/img/icon_youtube.svg" alt="Logo e Link do Canal RodSou Youtube" width="30"
+                            height="30">
                     </a>
                 </li>
 
             </ul>
         </nav>
     </Section>
+
     <section id="sobreMim" class="container-section displayNone">
         <h2 class="titulo" data-anime="down">Sobre mim</h2>
         <div class="sobreMim">
             <div class="sobreMim__foto" data-anime="right">
-                <img src="assets/img/Eu-Redes-NV.png" alt="Foto do autor" width="500" height="500"/>
+                <img src="assets/img/Eu-Redes-NV.png" alt="Foto do autor" width="500" height="500" />
             </div>
-            <div class="sobreMim__texto" data-anime="left"> 
-                <p>Olá, me chamo Ramon Rodrigues e seja bem-vindo ao meu portfólio.</p>        
+            <div class="sobreMim__texto" data-anime="left">
+                <p>Olá, me chamo Ramon Rodrigues e seja bem-vindo ao meu portfólio.</p>
                 <p>Vou compartilhar um pouco sobre mim:</p>
-                <p>Iniciei na programação estudando lógica de programação com a tecnologia JAVA. Foi um passo ousado, mas desde então, tenho vivido uma incrível jornada de aprendizado e crescimento.</p>
-                <p>Em novembro do mesmo ano, fui agraciado com uma oportunidade única: o programa One Next Education, em parceria com a Oracle e a Alura. Durante esse programa, tive a oportunidade de expandir meus horizontes no mundo da tecnologia. Fui capaz de mergulhar profundamente em áreas como Front-End e Data Science, e o mais importante, conhecer pessoas incríveis e formar novas amizades.</p>       
+                <p>Iniciei na programação estudando lógica de programação com a tecnologia JAVA. Foi um passo ousado,
+                    mas desde então, tenho vivido uma incrível jornada de aprendizado e crescimento.</p>
+                <p>Em novembro do mesmo ano, fui agraciado com uma oportunidade única: o programa One Next Education, em
+                    parceria com a Oracle e a Alura. Durante esse programa, tive a oportunidade de expandir meus
+                    horizontes no mundo da tecnologia. Fui capaz de mergulhar profundamente em áreas como Front-End e
+                    Data Science, e o mais importante, conhecer pessoas incríveis e formar novas amizades.</p>
                 <p>Minhas habilidades e conhecimentos:</p>
                 <ul>
-                    <li>Git/GitHub: Aprendi a importância da colaboração e do controle de versão em projetos de software.</li>
+                    <li>Git/GitHub: Aprendi a importância da colaboração e do controle de versão em projetos de
+                        software.</li>
                     <li>HTML, CSS, JavaScript: Fundamentos cruciais para qualquer desenvolvedor web.</li>
-                    <li>jQuery me permite criar interfaces de usuário interativas e atraentes, melhorando a usabilidade e a funcionalidade de sites e aplicativos da web</li>
+                    <li>jQuery me permite criar interfaces de usuário interativas e atraentes, melhorando a usabilidade
+                        e a funcionalidade de sites e aplicativos da web</li>
                     <li>React: Uma biblioteca JavaScript que me permitiu criar interfaces de usuário incríveis.</li>
                     <li>Axios: Conhecimento valioso para fazer solicitações HTTP de maneira eficiente.</li>
-                    <li>Conhecimento básico em JAVA: Minha jornada começou com essa linguagem e continua a ser uma parte importante do meu aprendizado.</li>
-                    <li>MySQL, Oracle: Estou atualmente estudando bancos de dados, incluindo MySQL e Oracle, para aprimorar meu conhecimento em gerenciamento de dados.</li>
-                    <li>Python: Estou me aventurando na análise de dados com Python, automação de tarefas e aplicativos mobile, explorando seu vasto potencial.</li>
-                    <li>Graduação em Análise e Desenvolvimento de Sistemas: Estou comprometido em expandir meu conhecimento acadêmico, e atualmente estou cursando Análise e Desenvolvimento de Sistemas na Unicesumar.</li>
+                    <li>Conhecimento básico em JAVA: Minha jornada começou com essa linguagem e continua a ser uma parte
+                        importante do meu aprendizado.</li>
+                    <li>MySQL, Oracle: Estou atualmente estudando bancos de dados, incluindo MySQL e Oracle, para
+                        aprimorar meu conhecimento em gerenciamento de dados.</li>
+                    <li>Python: Estou me aventurando na análise de dados com Python, automação de tarefas e aplicativos
+                        mobile, explorando seu vasto potencial.</li>
+                    <li>Graduação em Análise e Desenvolvimento de Sistemas: Estou comprometido em expandir meu
+                        conhecimento acadêmico, e atualmente estou cursando Análise e Desenvolvimento de Sistemas na
+                        Unicesumar.</li>
                 </ul>
             </div>
             <span class="sobreMim__span">
@@ -180,325 +211,731 @@
             </span>
         </div>
     </section>
-    <section  id="habilidade" class="container-section displayNone" >   
+
+    <section id="habilidade" class="container-section displayNone">
         <div id="habilidade__titulo">
             <h2 class="titulo" data-anime="down">Habilidades</h2>
         </div>
         <div id="habilidade__tecnologia">
-            <nav class="habilidade__menu"  data-anime="right" >
+            <nav class="habilidade__menu" data-anime="right">
                 <ul class="habilidade__lista">
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-html.svg" alt="Logo HTML5">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-html.svg"
+                            alt="Logo HTML5">
                         <p>HTML5</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-css.svg" alt="Logo CSS3">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-css.svg"
+                            alt="Logo CSS3">
                         <p>CSS3</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-js.svg" alt="Logo JavaScript">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-js.svg"
+                            alt="Logo JavaScript">
                         <p>JavaScript</p>
-                    </li> 
+                    </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-typescript.svg" alt="Logo MySQL">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-typescript.svg"
+                            alt="Logo MySQL">
                         <p>Typescript</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-react.svg" alt="Logo React">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-react.svg"
+                            alt="Logo React">
                         <p>React</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-mysql.svg" alt="Logo MySQL">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-mysql.svg"
+                            alt="Logo MySQL">
                         <p>MySQL</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-python.svg" alt="Logo Python">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-python.svg"
+                            alt="Logo Python">
                         <p>Python</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-git.svg" alt="Logo Git">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-git.svg"
+                            alt="Logo Git">
                         <p>Git</p>
                     </li>
                     <li class="habilidade__item">
-                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-wordpress.svg" alt="Logo WordPress">
+                        <img class="habilidade__img" width="400" height="350" src="./assets/img/icon-wordpress.svg"
+                            alt="Logo WordPress">
                         <p>WordPress</p>
                     </li>
                     <li class="habilidade__item habilidade__item-carrosel">
-                        <img src="./assets/img/icon-html.svg" class="habilidade__img" width="200" height="200" alt="Logo HTML5" >
+                        <img src="./assets/img/icon-html.svg" class="habilidade__img" width="200" height="200"
+                            alt="Logo HTML5">
                         <p>HTML5</p>
                     </li>
-                </ul>   
+                </ul>
             </nav>
-        </div> 
+        </div>
     </section>
-    <section  id="projetos" class="container-section projetosSec" >   
+
+    <section id="projetos" class="container-section projetosSec">
         <div id="projetos__titulo">
             <h2 class="titulo" data-anime="down">Projetos</h2>
         </div>
         <div id="projetos__tecnologia">
-            <nav class="projetos__menu"  data-anime="right" >
-                <ul class="projetos__item"> 
+            <nav class="projetos__menu" data-anime="right">
+                <ul class="projetos__item">
+
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/kidflix.webp" alt="Foto do site KidFlix"  width="300" height="220" class="projetos__img">
+                        <img src="./assets/img/Projetos/Converter.webp" alt="Foto do site de conversão de moedas" width="300"
+                            height="220" class="projetos__img">
+                        <div class="projetos__descricao">
+                            <h3 class="projetos__nome">Converter</h3>
+                            <div class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://rodsoudev.com/converter/" target="_blank"
+                                    class="projetos__link projetos__btn">Site</a>
+                            </div>
+
+                        </div>
+                        <div class="projetos__descricao--invisivel">
+                            <span class="projetos__spanSobre">
+                                <p class="projetos__sobre">Conversor de Moeda.</p>
+                                <p class="projetos__sobre">Desenvolvedida utilizando React + TypeScript + Vite </p>
+                                <p class="projetos__sobre">Utilizando as tecnologias Axios, Context API e Material UI, desenvolvi um Conversor de Moedas que permite aos usuários converterem facilmente entre diferentes moedas em tempo real. </p>
+                                <p class="projetos__sobre">Este projeto integra-se perfeitamente à API www.exchangerate-api, garantindo que os usuários possam verificar instantaneamente o valor da conversão de suas moedas nacionais, como o BRL, para outras moedas, como o dólar, com precisão e rapidez. </p>
+                                <a href="https://github.com/RamonRodSou/Conveter" target="_blank"
+                                    class="projetos__link projetos__btn">GitHub</a>
+                            </span>
+
+                        </div>
+                    </li>
+
+                    <li class="projetos__lista">
+                        <img src="./assets/img/Projetos/App.webp" alt="Foto do Aplicativo Mobile Gerente App" width="300"
+                            height="220" class="projetos__img">
+                        <div class="projetos__descricao">
+                            <h3 class="projetos__nome">Gerente App</h3>
+                            <div class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://mega.nz/file/cIJ3UDTY#8rwU8aerQjc2cpbvBZK72Zd05k95M2B8ZlDTlJ7FoUw" target="_blank"
+                                    class="projetos__link projetos__btn">Link APK</a>
+                            </div>
+
+                        </div>
+                        <div class="projetos__descricao--invisivel">
+                            <span class="projetos__spanSobre">
+                                <p class="projetos__sobre">Mobile Gerente App</p>
+                                <p class="projetos__sobre">O Gerente App, é um aplicativo mobile desenvolvido com React Native, com objetivo de ajudar pequenos empreendedores a organizar seu estoque de produtos.</p>
+                                <p class="projetos__sobre">Desenvolvid com React Native e todo a solucao de banco de dados utilizando o Firebase, que é um banco de dados em nuvem.</p>
+                                <p class="projetos__sobre">React Native, Firebase, Expo, react-navigation, @react-native-firebase/storage, @react-native-picker/picker, expo-camera, expo-image-picker, Context API, Hooks.</p>
+                                <a href="https://github.com/RamonRodSou/InventoryManager" target="_blank"
+                                    class="projetos__link projetos__btn">GitHub</a>
+                            </span>
+
+                        </div>
+                    </li>
+                    
+                    <li class="projetos__lista">
+                        <img src="./assets/img/Projetos/Agendou.webp" alt="Foto do site de Angendou" width="300"
+                            height="220" class="projetos__img">
+                        <div class="projetos__descricao">
+                            <h3 class="projetos__nome">Agendou</h3>
+                            <div class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://rodsoudev.com/agendou/" target="_blank"
+                                    class="projetos__link projetos__btn">Site</a>
+                            </div>
+
+                        </div>
+                        <div class="projetos__descricao--invisivel">
+                            <span class="projetos__spanSobre">
+                                <p class="projetos__sobre">Agendamento de Barbearia.</p>
+                                <p class="projetos__sobre">Fomulario feito com steppers, e conectado a uma API telegram, assim que submetido o Profissional recebe o agendamento via como uma mensagem no telegram.</p>
+                                <p class="projetos__sobre">Na primeira tela é necessario colocar o telefone do profissional, deixei como exemplo os telefones: 21987654321 e 21900000000.</p>
+                                <p class="projetos__sobre">Desenvolvedida com React, Material-UI, MUI X Date Pickers, Axios, Supabase JS, API de Horário de São Paulo, API do Telegram.</p>
+                                <a href="https://github.com/RamonRodSou/Agendamento" target="_blank"
+                                    class="projetos__link projetos__btn">GitHub</a>
+                            </span>
+
+                        </div>
+                    </li>
+
+                    <li class="projetos__lista">
+                        <img src="./assets/img/Projetos/Alvo.webp" alt="Foto do site Jogo do Alvo" width="300"
+                            height="220" class="projetos__img">
+                        <div class="projetos__descricao">
+                            <h3 class="projetos__nome">Jogo</h3>
+                            <div class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://rodsoudev.com/jogo/" target="_blank"
+                                    class="projetos__link projetos__btn">Site</a>
+                            </div>
+
+                        </div>
+                        <div class="projetos__descricao--invisivel">
+                            <span class="projetos__spanSobre">
+                                <p class="projetos__sobre">Jogo do Alvo.</p>
+                                <p class="projetos__sobre">Desenvolvedida utilizando HTML, CSS e JavaScript.</p>
+                                <p class="projetos__sobre">A tela do site, se tranforma em um campo onde tem um alvo, o cursor do mouse em forma de mira, o objetivo é acertar o alvo.</p>
+                                <p class="projetos__sobre">A cada acerto é somado um ponto, o alvo vai diminuindo e movimentando mais rapido, chegando em uma quantidade de pontos o mapa é alterado.</p>
+
+                                <a href="https://github.com/RamonRodSou/JogoAlvo" target="_blank"
+                                    class="projetos__link projetos__btn">GitHub</a>
+                            </span>
+
+                        </div>
+                    </li>
+
+                    <li class="projetos__lista">
+                        <img src="./assets/img/Projetos/Cronometro.webp" alt="Foto do site Countdown" width="300"
+                            height="220" class="projetos__img">
+                        <div class="projetos__descricao">
+                            <h3 class="projetos__nome">Countdown</h3>
+                            <div class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://rodsoudev.com/countdown/" target="_blank"
+                                    class="projetos__link projetos__btn">Site</a>
+                            </div>
+
+                        </div>
+                        <div class="projetos__descricao--invisivel">
+                            <span class="projetos__spanSobre">
+                                <p class="projetos__sobre">Cronômetro.</p>
+                                <p class="projetos__sobre">Desenvolvedida utilizando React + TypeScript + Vite </p>
+                                <p class="projetos__sobre">Usando toda magia do React com seus Hooks etoda eficiencia do
+                                    Typescript </p>
+                                <p class="projetos__sobre">O usuario consegue dar inicio, parar e salvar as voltas infinitamente. </p>
+
+                                <a href="https://github.com/RamonRodSou/Countdown" target="_blank"
+                                    class="projetos__link projetos__btn">GitHub</a>
+                            </span>
+
+                        </div>
+                    </li>
+
+                    <li class="projetos__lista">
+                        <img src="./assets/img/Projetos/Calculator.webp" alt="Foto do site Calculator" width="300"
+                            height="220" class="projetos__img">
+                        <div class="projetos__descricao">
+                            <h3 class="projetos__nome">Calculator</h3>
+                            <div class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://rodsoudev.com/calculator/" target="_blank"
+                                    class="projetos__link projetos__btn">Site</a>
+                            </div>
+
+                        </div>
+                        <div class="projetos__descricao--invisivel">
+                            <span class="projetos__spanSobre">
+                                <p class="projetos__sobre">Calculadora.</p>
+                                <p class="projetos__sobre">Desenvolvedida utilizando React + TypeScript + Vite </p>
+                                <p class="projetos__sobre">Usando toda magia do React com seus Hooks etoda eficiencia do
+                                    Typescript </p>
+                                <a href="https://github.com/RamonRodSou/Calculator" target="_blank"
+                                    class="projetos__link projetos__btn">GitHub</a>
+                            </span>
+
+                        </div>
+                    </li>
+
+                    <li class="projetos__lista">
+                        <img src="./assets/img/Projetos/CrudMySql.webp" alt="Foto do projeto Crud + MySql" width="300"
+                            height="220" class="projetos__img">
+                        <div class="projetos__descricao">
+                            <h3 class="projetos__nome">Crud+MySql</h3>
+                            <div class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="https://github.com/RamonRodSou/FormFrontBackMySql" target="_blank"
+                                    class="projetos__link projetos__btn">GitHub</a>
+                            </div>
+
+                        </div>
+                        <div class="projetos__descricao--invisivel">
+                            <span class="projetos__spanSobre">
+                                <p class="projetos__sobre">Este projeto é um CRUD simples, desenvolvido para estabelecer
+                                    uma conexão com um banco de dados.</p>
+                                <p class="projetos__sobre">Para sua implementação, foram utilizadas tecnologias
+                                    modernas:</p>
+                                <p class="projetos__sobre">HTML + CSS no Front-End</p>
+                                <p class="projetos__sobre">Node.js com Express no Back-End</p>
+                                <p class="projetos__sobre">Como banco de dados, optou-se por utilizar MySQL, uma escolha
+                                    confiável e amplamente utilizada no mundo dos bancos de dados relacionais.</p>
+                                <a href="https://github.com/RamonRodSou/FormFrontBackMySql" target="_blank"
+                                    class="projetos__link projetos__btn">GitHub</a>
+                            </span>
+
+                        </div>
+                    </li>
+                    <li class="projetos__lista">
+                        <img src="./assets/img/Projetos/Stepper.webp" alt="Foto do Projeto Crus Stepper" width="300"
+                            height="220" class="projetos__img">
+                        <div class="projetos__descricao">
+                            <h3 class="projetos__nome">Crud stepper</h3>
+                            <div class="projetos__btnDiv">
+                                <button class="projetos__btn saibaMais">Saiba Mais</button>
+                                <a href="por meio de uma sequência de etapas lógicas e numeradas" target="_blank"
+                                    class="projetos__link projetos__btn">GitHub</a>
+                            </div>
+
+                        </div>
+                        <div class="projetos__descricao--invisivel">
+                            <span class="projetos__spanSobre">
+                                <p class="projetos__sobre">Cadastro de agendamento realizado Usando Json Server para
+                                    capturar os dados.</p>
+                                <p class="projetos__sobre">A ideia foi criar um cadastro usando steppers, onde o
+                                    proecsso por meio de uma sequência de etapas lógicas e numeradas. </p>
+                                <p class="projetos__sobre">Com o diferencial, que o usuário pode add quantos numeros de
+                                    telefone ele quiser.</p>
+                                <a href="https://github.com/RamonRodSou/Scheduling" target="_blank"
+                                    class="projetos__link projetos__btn">GitHub</a>
+                            </span>
+
+                        </div>
+                    </li>
+                    <li class="projetos__lista">
+                        <img src="./assets/img/Projetos/kidflix.webp" alt="Foto do site KidFlix" width="300"
+                            height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">KidFlix</h3>
-                            <div  class="projetos__btnDiv">
+                            <div class="projetos__btnDiv">
                                 <button class="projetos__btn saibaMais">Saiba Mais</button>
-                                <a href="https://kidflix.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                                <a href="https://kidflix.vercel.app/" target="_blank"
+                                    class="projetos__link projetos__btn">Site</a>
                             </div>
-                                                    
+
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
-                                <p class="projetos__sobre">O projeto que realizei com React JS nasceu de uma profunda motivação pessoal - o amor e cuidado pelos meus filhos pequenos. Como pai atento, sei o quanto é importante garantir que meus filhos tenham acesso a conteúdo adequado e educativo. No entanto, controlar o que eles assistem no YouTube pode ser desafiador.</p>
-                                <p class="projetos__sobre">Foi aí que a inspiração me atingiu: por que não criar uma aplicação que me permitisse escolher cuidadosamente o que meus filhos podem assistir? Assim, nasceu a minha aplicação, desenvolvida com React JS, que me oferece o poder de selecionar e adicionar apenas o conteúdo que considero apropriado e enriquecedor para meus filhos.</p>
-                                <p class="projetos__sobre">Com essa aplicação, não só posso proporcionar um ambiente seguro e divertido para meus filhos, mas também compartilhar essa experiência com outras famílias que buscam uma maneira mais fácil de controlar o que seus filhos assistem. Estou entusiasmado em fornecer uma solução que reflete meu compromisso com a educação e o entretenimento responsável das próximas gerações,</p>
+                                <p class="projetos__sobre">O projeto que realizei com React JS nasceu de uma profunda
+                                    motivação pessoal - o amor e cuidado pelos meus filhos pequenos. Como pai atento,
+                                    sei o quanto é importante garantir que meus filhos tenham acesso a conteúdo adequado
+                                    e educativo. No entanto, controlar o que eles assistem no YouTube pode ser
+                                    desafiador.</p>
+                                <p class="projetos__sobre">Foi aí que a inspiração me atingiu: por que não criar uma
+                                    aplicação que me permitisse escolher cuidadosamente o que meus filhos podem
+                                    assistir? Assim, nasceu a minha aplicação, desenvolvida com React JS, que me oferece
+                                    o poder de selecionar e adicionar apenas o conteúdo que considero apropriado e
+                                    enriquecedor para meus filhos.</p>
+                                <p class="projetos__sobre">Com essa aplicação, não só posso proporcionar um ambiente
+                                    seguro e divertido para meus filhos, mas também compartilhar essa experiência com
+                                    outras famílias que buscam uma maneira mais fácil de controlar o que seus filhos
+                                    assistem. Estou entusiasmado em fornecer uma solução que reflete meu compromisso com
+                                    a educação e o entretenimento responsável das próximas gerações.</p>
+                                <a href="https://github.com/RamonRodSou/kidflix" target="_blank"
+                                    class="projetos__link projetos__btn">GitHub</a>
                             </span>
-                            
+
                         </div>
-                    </li> 
+                    </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/AluraGeek.webp" alt="Foto do site  AluraGeek"  width="300" height="220" class="projetos__img">
+                        <img src="./assets/img/Projetos/AluraGeek.webp" alt="Foto do site  AluraGeek" width="300"
+                            height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">AluraGeek</h3>
-                            <div  class="projetos__btnDiv">
+                            <div class="projetos__btnDiv">
                                 <button class="projetos__btn saibaMais">Saiba Mais</button>
-                                <a href="https://ramonrodsou.github.io/AluraGeek/admin/public/index.html" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                                <a href="https://ramonrodsou.github.io/AluraGeek/admin/public/index.html"
+                                    target="_blank" class="projetos__link projetos__btn">Projeto</a>
                             </div>
-                                                    
+
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
-                                <p class="projetos__sobre">O projeto AluraGeek relizado utilizando HTML, CSS e JavaScript é o resultado de um desafio empolgante que surgiu durante minha participação no programa Oracle Next Education, enquanto estava estudando pela plataforma de cursos online Alura. Esse desafio consistia em criar um site de compras que utilizasse operações CRUD (Create, Read, Update, Delete) para gerenciar os produtos disponíveis.</p>
-                                <p class="projetos__sobre">No entanto, eu não me limitei apenas a isso. Fui além e desenvolvi funcionalidades adicionais que tornam o AluraGeek uma plataforma completa. Além do gerenciamento de produtos, implementei um sistema de cadastro de usuários, com distinção entre usuários normais e administradores. Essa diferenciação é fundamental, pois apenas os administradores têm permissão para criar, deletar, atualizar novos produtos e editar ou excluir informações dos clientes.</p>
-                                <p class="projetos__sobre">Com o AluraGeek, tenho orgulho de oferecer uma experiência de compra online abrangente e segura. Os administradores têm controle total sobre o catálogo de produtos, garantindo que os clientes tenham acesso a uma ampla variedade de opções. Ao mesmo tempo, os clientes podem criar contas, realizar compras e desfrutar de um ambiente amigável e funcional.</p>
-                                <p class="projetos__sobre">Estou entusiasmado em compartilhar o AluraGeek como um exemplo de como a educação e o aprendizado contínuo podem inspirar soluções criativas e práticas para desafios do mundo real. Este projeto reflete meu compromisso em aplicar o conhecimento adquirido por meio da educação online para criar soluções significativas e inovadoras.</p>
+                                <p class="projetos__sobre">O projeto AluraGeek relizado utilizando HTML, CSS e
+                                    JavaScript é o resultado de um desafio empolgante que surgiu durante minha
+                                    participação no programa Oracle Next Education, enquanto estava estudando pela
+                                    plataforma de cursos online Alura. Esse desafio consistia em criar um site de
+                                    compras que utilizasse operações CRUD (Create, Read, Update, Delete) para gerenciar
+                                    os produtos disponíveis.</p>
+                                <p class="projetos__sobre">No entanto, eu não me limitei apenas a isso. Fui além e
+                                    desenvolvi funcionalidades adicionais que tornam o AluraGeek uma plataforma
+                                    completa. Além do gerenciamento de produtos, implementei um sistema de cadastro de
+                                    usuários, com distinção entre usuários normais e administradores. Essa diferenciação
+                                    é fundamental, pois apenas os administradores têm permissão para criar, deletar,
+                                    atualizar novos produtos e editar ou excluir informações dos clientes.</p>
+                                <p class="projetos__sobre">Com o AluraGeek, tenho orgulho de oferecer uma experiência de
+                                    compra online abrangente e segura. Os administradores têm controle total sobre o
+                                    catálogo de produtos, garantindo que os clientes tenham acesso a uma ampla variedade
+                                    de opções. Ao mesmo tempo, os clientes podem criar contas, realizar compras e
+                                    desfrutar de um ambiente amigável e funcional.</p>
+                                <p class="projetos__sobre">Estou entusiasmado em compartilhar o AluraGeek como um
+                                    exemplo de como a educação e o aprendizado contínuo podem inspirar soluções
+                                    criativas e práticas para desafios do mundo real. Este projeto reflete meu
+                                    compromisso em aplicar o conhecimento adquirido por meio da educação online para
+                                    criar soluções significativas e inovadoras.</p>
+                                <a href="https://github.com/RamonRodSou/AluraGeek/" target="_blank"
+                                    class="projetos__link projetos__btn">GitHub</a>
                             </span>
-                            
+
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/Formulario-hooks.webp" alt="Foto do site Formulario de Cadastro com Hooks"  width="300" height="220px" class="projetos__img">
+                        <img src="./assets/img/Projetos/Formulario-hooks.webp"
+                            alt="Foto do site Formulario de Cadastro com Hooks" width="300" height="220"
+                            class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Formulário</h3>
-                            <div  class="projetos__btnDiv">
+                            <div class="projetos__btnDiv">
                                 <button class="projetos__btn saibaMais">Saiba Mais</button>
-                                <a href="https://react-hooks-liard.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                                <a href="https://react-hooks-liard.vercel.app/" target="_blank"
+                                    class="projetos__link projetos__btn">Projeto</a>
                             </div>
-                                                    
+
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
-                                <p class="projetos__sobre">Apresento a você um formulário moderno e eficiente, desenvolvido com a tecnologia React e aproveitando ao máximo o poder dos hooks. Este projeto é uma demonstração de como a simplicidade e a eficácia podem se unir para criar uma experiência de usuário excepcional.</p>
-                                <p class="projetos__sobre">Utilizando a biblioteca React, pude criar um formulário que é ágil, responsivo e fácil de usar. Os hooks do React desempenharam um papel crucial na simplificação da lógica do meu aplicativo, tornando-o mais limpo e mais compreensível.</p>
-                                <p class="projetos__sobre">Este formulário moderno é ideal para coletar dados de forma eficaz e apresentá-los de maneira organizada. Além disso, ele demonstra como a tecnologia React e os hooks podem ser usados para aprimorar a interatividade e a usabilidade em aplicativos web.</p>
-                                <p class="projetos__sobre">Estou entusiasmado em compartilhar este projeto, demonstrando como o React e os hooks podem tornar a criação de formulários uma tarefa eficiente e agradável. Espero que esta demonstração inspire outros desenvolvedores a explorar as possibilidades dessa tecnologia e criar experiências ainda mais impressionantes</p>
+                                <p class="projetos__sobre">Apresento a você um formulário moderno e eficiente,
+                                    desenvolvido com a tecnologia React e aproveitando ao máximo o poder dos hooks. Este
+                                    projeto é uma demonstração de como a simplicidade e a eficácia podem se unir para
+                                    criar uma experiência de usuário excepcional.</p>
+                                <p class="projetos__sobre">Utilizando a biblioteca React, pude criar um formulário que é
+                                    ágil, responsivo e fácil de usar. Os hooks do React desempenharam um papel crucial
+                                    na simplificação da lógica do meu aplicativo, tornando-o mais limpo e mais
+                                    compreensível.</p>
+                                <p class="projetos__sobre">Este formulário moderno é ideal para coletar dados de forma
+                                    eficaz e apresentá-los de maneira organizada. Além disso, ele demonstra como a
+                                    tecnologia React e os hooks podem ser usados para aprimorar a interatividade e a
+                                    usabilidade em aplicativos web.</p>
+                                <p class="projetos__sobre">Estou entusiasmado em compartilhar este projeto, demonstrando
+                                    como o React e os hooks podem tornar a criação de formulários uma tarefa eficiente e
+                                    agradável. Espero que esta demonstração inspire outros desenvolvedores a explorar as
+                                    possibilidades dessa tecnologia e criar experiências ainda mais impressionantes</p>
 
                             </span>
-                            
+
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/Organo.webp" alt="Foto do site Organo"  width="300" height="220" class="projetos__img">
+                        <img src="./assets/img/Projetos/Organo.webp" alt="Foto do site Organo" width="300" height="220"
+                            class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Organo</h3>
-                            <div  class="projetos__btnDiv">
+                            <div class="projetos__btnDiv">
                                 <button class="projetos__btn saibaMais">Saiba Mais</button>
-                                <a href="https://organo2-nine.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                                <a href="https://organo2-nine.vercel.app/" target="_blank"
+                                    class="projetos__link projetos__btn">Projeto</a>
                             </div>
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
-                            <div>
-                                <p class="projetos__sobre">Este projeto é um exemplo empolgante do que pode ser alcançado com a tecnologia React JS. Foi desenvolvido durante um curso ministrado pela Alura, que proporcionou uma experiência de aprendizado prática e enriquecedora.</p>
-                            </div>
-                                                    
-                                <p class="projetos__sobre">A ideia por trás deste projeto é a gestão de colaboradores e times de forma eficiente e intuitiva. Cada colaborador pode ser cadastrado com informações como nome, cargo e uma foto pessoal. Além disso, cada colaborador é associado a um time específico. A singularidade deste projeto reside na possibilidade de personalizar cada time com uma cor distinta.</p>
-                                <p class="projetos__sobre">No momento do cadastro do time, os usuários têm a liberdade de escolher a cor que melhor representa o seu grupo. Isso não apenas torna a identificação visual mais fácil, mas também adiciona um toque de personalização que torna o projeto mais envolvente.</p>
-                                <p class="projetos__sobre">Ao utilizar React JS, conseguimos criar uma experiência de usuário suave e responsiva. Os conceitos e técnicas aprendidos durante o curso da Alura permitiram que este projeto se tornasse uma aplicação prática e funcional para a gestão de colaboradores e times.</p>
+                                <div>
+                                    <p class="projetos__sobre">Este projeto é um exemplo empolgante do que pode ser
+                                        alcançado com a tecnologia React JS. Foi desenvolvido durante um curso
+                                        ministrado pela Alura, que proporcionou uma experiência de aprendizado prática e
+                                        enriquecedora.</p>
+                                </div>
+
+                                <p class="projetos__sobre">A ideia por trás deste projeto é a gestão de colaboradores e
+                                    times de forma eficiente e intuitiva. Cada colaborador pode ser cadastrado com
+                                    informações como nome, cargo e uma foto pessoal. Além disso, cada colaborador é
+                                    associado a um time específico. A singularidade deste projeto reside na
+                                    possibilidade de personalizar cada time com uma cor distinta.</p>
+                                <p class="projetos__sobre">No momento do cadastro do time, os usuários têm a liberdade
+                                    de escolher a cor que melhor representa o seu grupo. Isso não apenas torna a
+                                    identificação visual mais fácil, mas também adiciona um toque de personalização que
+                                    torna o projeto mais envolvente.</p>
+                                <p class="projetos__sobre">Ao utilizar React JS, conseguimos criar uma experiência de
+                                    usuário suave e responsiva. Os conceitos e técnicas aprendidos durante o curso da
+                                    Alura permitiram que este projeto se tornasse uma aplicação prática e funcional para
+                                    a gestão de colaboradores e times.</p>
                             </span>
-                            
+
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/OlaMundo.webp" alt="Foto do site Olá Mundo"  width="300" height="220" class="projetos__img">
+                        <img src="./assets/img/Projetos/OlaMundo.webp" alt="Foto do site Olá Mundo" width="300"
+                            height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Ola Mundo</h3>
-                            <div  class="projetos__btnDiv">
+                            <div class="projetos__btnDiv">
                                 <button class="projetos__btn saibaMais">Saiba Mais</button>
-                                <a href="https://ola-mundo-delta-three.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                                <a href="https://ola-mundo-delta-three.vercel.app/" target="_blank"
+                                    class="projetos__link projetos__btn">Projeto</a>
                             </div>
-                                                    
+
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
-                                <p class="projetos__sobre">O projeto 'Olá Mundo' é uma criação realizada com React, que tem como objetivo ser uma apresentação pessoal e uma plataforma para compartilhar informações sobre tecnologias. Neste projeto, você encontrará uma introdução a mim e algumas informações relevantes sobre tecnologia.</p>
-                                <p class="projetos__sobre">Utilizando a flexibilidade e a capacidade de personalização do React, pude criar um espaço onde posso compartilhar minha experiência e conhecimento com você. No 'Olá Mundo', você encontrará detalhes sobre minha jornada, minhas paixões e interesses em tecnologia e desenvolvimento.</p>
-                                <p class="projetos__sobre">Além disso, este projeto oferece informações atualizadas sobre as mais recentes tendências e tecnologias no mundo da programação, proporcionando uma visão geral do cenário tecnológico em constante evolução.</p>
+                                <p class="projetos__sobre">O projeto 'Olá Mundo' é uma criação realizada com React, que
+                                    tem como objetivo ser uma apresentação pessoal e uma plataforma para compartilhar
+                                    informações sobre tecnologias. Neste projeto, você encontrará uma introdução a mim e
+                                    algumas informações relevantes sobre tecnologia.</p>
+                                <p class="projetos__sobre">Utilizando a flexibilidade e a capacidade de personalização
+                                    do React, pude criar um espaço onde posso compartilhar minha experiência e
+                                    conhecimento com você. No 'Olá Mundo', você encontrará detalhes sobre minha jornada,
+                                    minhas paixões e interesses em tecnologia e desenvolvimento.</p>
+                                <p class="projetos__sobre">Além disso, este projeto oferece informações atualizadas
+                                    sobre as mais recentes tendências e tecnologias no mundo da programação,
+                                    proporcionando uma visão geral do cenário tecnológico em constante evolução.</p>
                             </span>
-                            
+
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/alurinha.webp" alt="Foto do site Alurinha cursos"  width="300" height="220" class="projetos__img">
+                        <img src="./assets/img/Projetos/alurinha.webp" alt="Foto do site Alurinha cursos" width="300"
+                            height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Alurinha</h3>
-                            <div  class="projetos__btnDiv">
+                            <div class="projetos__btnDiv">
                                 <button class="projetos__btn saibaMais">Saiba Mais</button>
-                                <a href="https://alurinhaflexbox.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                                <a href="https://alurinhaflexbox.vercel.app/" target="_blank"
+                                    class="projetos__link projetos__btn">Projeto</a>
                             </div>
-                                                    
+
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
-                                <p class="projetos__sobre">O projeto 'Alurinha' foi criado com um objetivo claro em mente: treinar e aprimorar habilidades em display Flex, além de desenvolver um site responsivo. Este projeto é uma realização concreta do poder do HTML e CSS para criar layouts flexíveis e adaptáveis.</p>
-                                <p class="projetos__sobre">Utilizando HTML e CSS, o 'Alurinha' demonstra o domínio da tecnologia Flexbox para o desenvolvimento de layouts de página. Através de técnicas de display Flex, o projeto oferece uma estrutura dinâmica e eficiente para a exibição de conteúdo, garantindo que o site seja visualmente atraente e funcional em diferentes dispositivos e tamanhos de tela.</p>
-                                <p class="projetos__sobre">Além disso, o foco na responsividade é um destaque do 'Alurinha'. A capacidade de adaptar-se a uma variedade de dispositivos, desde desktops até dispositivos móveis, é uma característica crucial na criação de uma experiência de usuário consistente e amigável.</p>
-                                <p class="projetos__sobre">Este projeto é um exemplo notável de como o HTML e o CSS podem ser utilizados de forma criativa e prática para treinar e aprimorar habilidades em design responsivo e display Flex. O 'Alurinha' é um testemunho do compromisso com a aprendizagem contínua e a busca pela excelência na criação de interfaces web atrativas e funcionais.</p>
+                                <p class="projetos__sobre">O projeto 'Alurinha' foi criado com um objetivo claro em
+                                    mente: treinar e aprimorar habilidades em display Flex, além de desenvolver um site
+                                    responsivo. Este projeto é uma realização concreta do poder do HTML e CSS para criar
+                                    layouts flexíveis e adaptáveis.</p>
+                                <p class="projetos__sobre">Utilizando HTML e CSS, o 'Alurinha' demonstra o domínio da
+                                    tecnologia Flexbox para o desenvolvimento de layouts de página. Através de técnicas
+                                    de display Flex, o projeto oferece uma estrutura dinâmica e eficiente para a
+                                    exibição de conteúdo, garantindo que o site seja visualmente atraente e funcional em
+                                    diferentes dispositivos e tamanhos de tela.</p>
+                                <p class="projetos__sobre">Além disso, o foco na responsividade é um destaque do
+                                    'Alurinha'. A capacidade de adaptar-se a uma variedade de dispositivos, desde
+                                    desktops até dispositivos móveis, é uma característica crucial na criação de uma
+                                    experiência de usuário consistente e amigável.</p>
+                                <p class="projetos__sobre">Este projeto é um exemplo notável de como o HTML e o CSS
+                                    podem ser utilizados de forma criativa e prática para treinar e aprimorar
+                                    habilidades em design responsivo e display Flex. O 'Alurinha' é um testemunho do
+                                    compromisso com a aprendizagem contínua e a busca pela excelência na criação de
+                                    interfaces web atrativas e funcionais.</p>
                             </span>
-                            
+
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/DoguinhoCrud.webp" alt="Foto do site Formulario Doguinho Crud"  width="300" height="220" class="projetos__img">
+                        <img src="./assets/img/Projetos/DoguinhoCrud.webp" alt="Foto do site Formulario Doguinho Crud"
+                            width="300" height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Crud</h3>
-                            <div  class="projetos__btnDiv">
+                            <div class="projetos__btnDiv">
                                 <button class="projetos__btn saibaMais">Saiba Mais</button>
-                                <a href="https://form-crud-blond.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
+                                <a href="https://form-crud-blond.vercel.app/" target="_blank"
+                                    class="projetos__link projetos__btn">Projeto</a>
                             </div>
-                                                    
+
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
-                                <p class="projetos__sobre">O projeto 'Doguinho' é um exemplo notável do poder da tecnologia, tendo sido desenvolvido com JavaScript, HTML e CSS. O principal objetivo deste site foi criar um sistema CRUD (Create, Read, Update, Delete) para o cadastro de usuários e produtos, com um foco especial e central nos usuários.</p>
-                                <p class="projetos__sobre">Ao empregar JavaScript, HTML e CSS, o 'Doguinho' conseguiu criar uma plataforma dinâmica e interativa que permite aos usuários gerenciar e interagir com informações de maneira eficiente. O sistema CRUD possibilita a criação, visualização, atualização e exclusão de registros, tornando-o uma ferramenta versátil e essencial para a gestão de usuários e produtos.</p>
-                                <p class="projetos__sobre">O projeto concentra-se principalmente na gestão de usuários, reconhecendo a importância de um sistema de autenticação sólido e eficaz. Isso não apenas garante a segurança dos dados dos usuários, mas também proporciona uma experiência de usuário aprimorada.</p>
-                                <p class="projetos__sobre">O 'Doguinho' representa o compromisso com a excelência no desenvolvimento web, demonstrando como JavaScript, HTML e CSS podem ser combinados para criar uma aplicação funcional e prática. Este projeto é uma prova do poder da tecnologia para resolver desafios complexos, como a gestão de informações de usuários e produtos de forma eficaz e eficiente.</p>
+                                <p class="projetos__sobre">O projeto 'Doguinho' é um exemplo notável do poder da
+                                    tecnologia, tendo sido desenvolvido com JavaScript, HTML e CSS. O principal objetivo
+                                    deste site foi criar um sistema CRUD (Create, Read, Update, Delete) para o cadastro
+                                    de usuários e produtos, com um foco especial e central nos usuários.</p>
+                                <p class="projetos__sobre">Ao empregar JavaScript, HTML e CSS, o 'Doguinho' conseguiu
+                                    criar uma plataforma dinâmica e interativa que permite aos usuários gerenciar e
+                                    interagir com informações de maneira eficiente. O sistema CRUD possibilita a
+                                    criação, visualização, atualização e exclusão de registros, tornando-o uma
+                                    ferramenta versátil e essencial para a gestão de usuários e produtos.</p>
+                                <p class="projetos__sobre">O projeto concentra-se principalmente na gestão de usuários,
+                                    reconhecendo a importância de um sistema de autenticação sólido e eficaz. Isso não
+                                    apenas garante a segurança dos dados dos usuários, mas também proporciona uma
+                                    experiência de usuário aprimorada.</p>
+                                <p class="projetos__sobre">O 'Doguinho' representa o compromisso com a excelência no
+                                    desenvolvimento web, demonstrando como JavaScript, HTML e CSS podem ser combinados
+                                    para criar uma aplicação funcional e prática. Este projeto é uma prova do poder da
+                                    tecnologia para resolver desafios complexos, como a gestão de informações de
+                                    usuários e produtos de forma eficaz e eficiente.</p>
                             </span>
-                            
+
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/fruta.webp" alt="Foto do site de Frutas & Frutos"  width="300" height="220" class="projetos__img">
+                        <img src="./assets/img/Projetos/fruta.webp" alt="Foto do site de Frutas & Frutos" width="300"
+                            height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Frutas & Frutos</h3>
                             <div class="projetos__btnDiv">
                                 <button class="projetos__btn saibaMais">Saiba Mais</button>
-                                <a href="https://fruta-e-frutocss.vercel.app/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
-                            </div>                                    
+                                <a href="https://fruta-e-frutocss.vercel.app/" target="_blank"
+                                    class="projetos__link projetos__btn">Projeto</a>
+                            </div>
+
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
-                                <p class="projetos__sobre">O site 'Fruto & Frutos' foi meticulosamente construído com HTML e CSS, com o principal objetivo de aprofundar o estudo da arquitetura da web e aprimorar as habilidades em CSS. Este projeto representa uma jornada dedicada à compreensão das nuances do design e da estrutura de páginas da web.</p>
-                                <p class="projetos__sobre">Ao utilizar HTML como base, o 'Fruto & Frutos' estabelece uma estrutura sólida e semântica para seu conteúdo, garantindo que a informação seja apresentada de maneira clara e acessível. Além disso, o CSS desempenha um papel crucial na estilização do site, demonstrando a importância da estética e do layout na experiência do usuário.</p>
-                                <p class="projetos__sobre">Este projeto oferece uma exploração cuidadosa das propriedades e recursos do CSS, permitindo que sejam aplicadas técnicas de design, layout e formatação de forma prática. A ênfase na arquitetura e no CSS como principais tecnologias do 'Fruto & Frutos' reflete o compromisso com o aprendizado contínuo e a busca pela excelência no desenvolvimento web.</p>
+                                <p class="projetos__sobre">O site 'Fruto & Frutos' foi meticulosamente construído com
+                                    HTML e CSS, com o principal objetivo de aprofundar o estudo da arquitetura da web e
+                                    aprimorar as habilidades em CSS. Este projeto representa uma jornada dedicada à
+                                    compreensão das nuances do design e da estrutura de páginas da web.</p>
+                                <p class="projetos__sobre">Ao utilizar HTML como base, o 'Fruto & Frutos' estabelece uma
+                                    estrutura sólida e semântica para seu conteúdo, garantindo que a informação seja
+                                    apresentada de maneira clara e acessível. Além disso, o CSS desempenha um papel
+                                    crucial na estilização do site, demonstrando a importância da estética e do layout
+                                    na experiência do usuário.</p>
+                                <p class="projetos__sobre">Este projeto oferece uma exploração cuidadosa das
+                                    propriedades e recursos do CSS, permitindo que sejam aplicadas técnicas de design,
+                                    layout e formatação de forma prática. A ênfase na arquitetura e no CSS como
+                                    principais tecnologias do 'Fruto & Frutos' reflete o compromisso com o aprendizado
+                                    contínuo e a busca pela excelência no desenvolvimento web.</p>
                             </span>
+
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/Encrip.webp" alt="Foto do site de Frutas & Frutos"  width="300" height="220" class="projetos__img">
+                        <img src="./assets/img/Projetos/Encrip.webp" alt="Foto do site de Frutas & Frutos" width="300"
+                            height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Encriptador</h3>
                             <div class="projetos__btnDiv">
                                 <button class="projetos__btn saibaMais">Saiba Mais</button>
-                                <a href="https://ramonrodsou.github.io/Challenge-Encriptador/" target="_blank" class="projetos__link projetos__btn">Projeto</a>
-                            </div>                                    
+                                <a href="https://ramonrodsou.github.io/Challenge-Encriptador/" target="_blank"
+                                    class="projetos__link projetos__btn">Projeto</a>
+                            </div>
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
-                                <p class="projetos__sobre">Com imenso entusiasmo, compartilho o resultado de um desafio significativo proposto pela Alura, que representou meu primeiro e notável teste independente. Nesse projeto desafiador, enfrentei a responsabilidade de conduzir o desenvolvimento por conta própria. Aproveitei a oportunidade para transformar ideias em realidade, enfrentando alguns obstáculos que me levaram a extensivas pesquisas para superá-los.</p>
-                                <p class="projetos__sobre">Ao final, os frutos desse esforço foram notáveis. Este projeto não apenas testou minhas habilidades, mas também se revelou uma oportunidade valiosa para aprimorar meu entendimento sobre o Modelo de Objeto de Documento (DOM). Fui desafiado a compreender minuciosamente como acessar tags, classes e IDs, além de manipulá-los utilizando JavaScript.</p>
-                                <p class="projetos__sobre">O aprendizado adquirido ao longo desse processo foi extraordinário, consolidando e expandindo consideravelmente meu conhecimento em DOM. Estou satisfeito em compartilhar que, no desfecho, todos os elementos se alinharam perfeitamente, resultando em um projeto bem-sucedido que representa não apenas um marco pessoal, mas também um avanço tangível em minha jornada de desenvolvimento.</p>
+                                <p class="projetos__sobre">Com imenso entusiasmo, compartilho o resultado de um desafio
+                                    significativo proposto pela Alura, que representou meu primeiro e notável teste
+                                    independente. Nesse projeto desafiador, enfrentei a responsabilidade de conduzir o
+                                    desenvolvimento por conta própria. Aproveitei a oportunidade para transformar ideias
+                                    em realidade, enfrentando alguns obstáculos que me levaram a extensivas pesquisas
+                                    para superá-los.</p>
+                                <p class="projetos__sobre">Ao final, os frutos desse esforço foram notáveis. Este
+                                    projeto não apenas testou minhas habilidades, mas também se revelou uma oportunidade
+                                    valiosa para aprimorar meu entendimento sobre o Modelo de Objeto de Documento (DOM).
+                                    Fui desafiado a compreender minuciosamente como acessar tags, classes e IDs, além de
+                                    manipulá-los utilizando JavaScript.</p>
+                                <p class="projetos__sobre">O aprendizado adquirido ao longo desse processo foi
+                                    extraordinário, consolidando e expandindo consideravelmente meu conhecimento em DOM.
+                                    Estou satisfeito em compartilhar que, no desfecho, todos os elementos se alinharam
+                                    perfeitamente, resultando em um projeto bem-sucedido que representa não apenas um
+                                    marco pessoal, mas também um avanço tangível em minha jornada de desenvolvimento.
+                                </p>
+                                <a href="https://github.com/RamonRodSou/Challenge-Encriptador" target="_blank"
+                                    class="projetos__link projetos__btn">GitHub</a>
                             </span>
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/Drone.webp" alt="Foto do site de Frutas & Frutos"  width="300" height="220" class="projetos__img">
+                        <img src="./assets/img/Projetos/Drone.webp" alt="Foto do site de Frutas & Frutos" width="300"
+                            height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Drone Midia</h3>
                             <div class="projetos__btnDiv">
                                 <button class="projetos__btn saibaMais">Saiba Mais</button>
-                            </div>                                    
+                            </div>
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
-                                <p class="projetos__sobre">Apresento com satisfação o "Drone Mídia" (nome fictício), um projeto desenvolvido sob medida para uma renomada empresa de drones. O desafio consistiu em criar uma plataforma que destacasse de forma envolvente e profissional todo o portfólio e os serviços oferecidos pela empresa.</p>
-                                <p class="projetos__sobre">Dada a natureza sensível da clientela, optei por preservar a privacidade dos clientes e, portanto, não disponibilizo o link do projeto. O "Drone Mídia" foi meticulosamente concebido utilizando a versatilidade e eficiência do WordPress como base, proporcionando uma experiência online excepcional.</p>
-                                <p class="projetos__sobre">A jornada de desenvolvimento envolveu a implementação de recursos e funcionalidades que refletem a inovação e a expertise da empresa no mundo dos drones. A estrutura do site foi projetada para cativar o público, apresentando de forma clara e atraente o extenso portfólio da empresa e seus serviços especializados.</p>
-                                <p class="projetos__sobre">Ao superar os desafios e incorporar as melhores práticas, o "Drone Mídia" se tornou um veículo eficaz para a empresa se destacar no cenário digital, transmitindo confiança e profissionalismo aos visitantes. Este projeto não só atendeu, mas excedeu as expectativas, solidificando meu compromisso em entregar soluções de alta qualidade e impacto visual para os clientes.</p>
+                                <p class="projetos__sobre">Apresento com satisfação o "Drone Mídia" (nome fictício), um
+                                    projeto desenvolvido sob medida para uma renomada empresa de drones. O desafio
+                                    consistiu em criar uma plataforma que destacasse de forma envolvente e profissional
+                                    todo o portfólio e os serviços oferecidos pela empresa.</p>
+                                <p class="projetos__sobre">Dada a natureza sensível da clientela, optei por preservar a
+                                    privacidade dos clientes e, portanto, não disponibilizo o link do projeto. O "Drone
+                                    Mídia" foi meticulosamente concebido utilizando a versatilidade e eficiência do
+                                    WordPress como base, proporcionando uma experiência online excepcional.</p>
+                                <p class="projetos__sobre">A jornada de desenvolvimento envolveu a implementação de
+                                    recursos e funcionalidades que refletem a inovação e a expertise da empresa no mundo
+                                    dos drones. A estrutura do site foi projetada para cativar o público, apresentando
+                                    de forma clara e atraente o extenso portfólio da empresa e seus serviços
+                                    especializados.</p>
+                                <p class="projetos__sobre">Ao superar os desafios e incorporar as melhores práticas, o
+                                    "Drone Mídia" se tornou um veículo eficaz para a empresa se destacar no cenário
+                                    digital, transmitindo confiança e profissionalismo aos visitantes. Este projeto não
+                                    só atendeu, mas excedeu as expectativas, solidificando meu compromisso em entregar
+                                    soluções de alta qualidade e impacto visual para os clientes.</p>
                             </span>
                         </div>
                     </li>
                     <li class="projetos__lista">
-                        <img src="./assets/img/Projetos/Barb.webp" alt="Foto do site de Frutas & Frutos"  width="300" height="220" class="projetos__img">
+                        <img src="./assets/img/Projetos/Barb.webp" alt="Foto do site de Frutas & Frutos" width="300"
+                            height="220" class="projetos__img">
                         <div class="projetos__descricao">
                             <h3 class="projetos__nome">Barber Shop</h3>
                             <div class="projetos__btnDiv">
                                 <button class="projetos__btn saibaMais">Saiba Mais</button>
-                            </div>                                    
+                            </div>
                         </div>
                         <div class="projetos__descricao--invisivel">
                             <span class="projetos__spanSobre">
-                                <p class="projetos__sobre">Tenho o prazer de compartilhar o projeto "Barber Shop" (nome fictício), uma iniciativa dedicada a elevar a presença online de uma barbearia renomada. A missão foi clara: criar uma plataforma que não apenas apresentasse de forma envolvente o extenso portfólio da barbearia, mas também destacasse seus serviços distintos de maneira elegante e atrativa.</p>
-                                <p class="projetos__sobre">Em respeito à confidencialidade do cliente, optei por não disponibilizar o link do projeto, prezando pela privacidade e segurança. O "Barber Shop" foi cuidadosamente construído utilizando a versatilidade e eficácia do WordPress, proporcionando uma experiência online marcante.</p>
-                                <p class="projetos__sobre">Ao longo do processo de desenvolvimento, concentrei-me em integrar elementos visuais e funcionais que refletissem a autenticidade e o profissionalismo da barbearia. O site foi estrategicamente elaborado para cativar os visitantes, apresentando de maneira clara e atraente não apenas os serviços oferecidos, mas também a atmosfera única e os talentos da equipe.</p>
-                                <p class="projetos__sobre">O resultado final do "Barber Shop" não apenas atendeu, mas superou as expectativas, proporcionando à barbearia uma presença online distinta e memorável. Este projeto, fundamentado na solidez do WordPress, reforça meu comprometimento em criar soluções digitais que não só respondem às necessidades do cliente, mas também elevam a experiência do usuário a um patamar superior.</p>
+                                <p class="projetos__sobre">Tenho o prazer de compartilhar o projeto "Barber Shop" (nome
+                                    fictício), uma iniciativa dedicada a elevar a presença online de uma barbearia
+                                    renomada. A missão foi clara: criar uma plataforma que não apenas apresentasse de
+                                    forma envolvente o extenso portfólio da barbearia, mas também destacasse seus
+                                    serviços distintos de maneira elegante e atrativa.</p>
+                                <p class="projetos__sobre">Em respeito à confidencialidade do cliente, optei por não
+                                    disponibilizar o link do projeto, prezando pela privacidade e segurança. O "Barber
+                                    Shop" foi cuidadosamente construído utilizando a versatilidade e eficácia do
+                                    WordPress, proporcionando uma experiência online marcante.</p>
+                                <p class="projetos__sobre">Ao longo do processo de desenvolvimento, concentrei-me em
+                                    integrar elementos visuais e funcionais que refletissem a autenticidade e o
+                                    profissionalismo da barbearia. O site foi estrategicamente elaborado para cativar os
+                                    visitantes, apresentando de maneira clara e atraente não apenas os serviços
+                                    oferecidos, mas também a atmosfera única e os talentos da equipe.</p>
+                                <p class="projetos__sobre">O resultado final do "Barber Shop" não apenas atendeu, mas
+                                    superou as expectativas, proporcionando à barbearia uma presença online distinta e
+                                    memorável. Este projeto, fundamentado na solidez do WordPress, reforça meu
+                                    comprometimento em criar soluções digitais que não só respondem às necessidades do
+                                    cliente, mas também elevam a experiência do usuário a um patamar superior.</p>
                             </span>
                         </div>
                     </li>
                 </ul>
             </nav>
-        </div> 
+        </div>
     </section>
+
     <section id="faleconosco" class="container-section" data-anime="down">
         <div class="faleconosco">
             <h2 class="titulo">Fale Comigo</h2>
-            <form  class="faleconosco__form" action="https://formspree.io/f/xqkvwoaj" method="POST">
-                <div class="faleconosco__div input-faleconosco__invalido" >
-                    <input name="name" id="nome" class="faleconosco__input form__nome" type="name" placeholder="Nome" data-nome  data-tipo="nome" required>
+            <form class="faleconosco__form" action="https://formspree.io/f/xqkvwoaj" method="POST">
+                <div class="faleconosco__div input-faleconosco__invalido">
+                    <input name="name" id="nome" class="faleconosco__input form__nome" type="name" placeholder="Nome"
+                        data-nome data-tipo="nome" required>
                     <!-- <label class="faleconosco__label" for="nome">Nome</label> -->
                     <!-- <span class="input-mensagem-erro">Esse campo não pode estar vazio</span> -->
                 </div>
-                <div class="faleconosco__div input-faleconosco__invalido" >
-                    <input id="email" class="faleconosco__input form__nome" type="email" name="email" placeholder="Email" data-email  data-tipo="email" required>
+                <div class="faleconosco__div input-faleconosco__invalido">
+                    <input id="email" class="faleconosco__input form__nome" type="email" name="email"
+                        placeholder="Email" data-email data-tipo="email" required>
                     <!-- <label class="faleconosco__label" for="email">Email</label> -->
                     <!-- <span class="input-mensagem-erro">Esse campo não pode estar vazio</span> -->
                 </div>
-                <div class="faleconosco__div input-container__invalido" >
+                <div class="faleconosco__div input-container__invalido">
                     <!-- <span class="input-mensagem-erro">Esse campo não pode estar vazio</span> -->
-                    <textarea name="message"  class="faleconosco__textarea form__texto"  cols="32" rows="10" placeholder="Escreva sua mensagem" required></textarea>
+                    <textarea name="message" class="faleconosco__textarea form__texto" cols="32" rows="10"
+                        placeholder="Escreva sua mensagem" required></textarea>
                 </div>
                 <button type="submit" class="faleconosco__btn">Enviar mensagem</button>
-            </form> 
+            </form>
         </div>
-    </section> 
+    </section>
+
     <section id="contatos" class="container-section displayNone" data-anime="down">
         <div class="contato">
             <h2 class="titulo">Contato</h2>
             <nav class="contato__menu">
                 <ul class="contato__redes">
-                    <li class="contato__item"><a href="https://github.com/RamonRodSou" target="_blank"><img src="./assets/img/icon_github.svg"
-                            alt="Logo e Link do Github" width="50" height="50"></a>
+                    <li class="contato__item"><a href="https://github.com/RamonRodSou" target="_blank"><img
+                                src="./assets/img/icon_github.svg" alt="Logo e Link do Github" width="50"
+                                height="50"></a>
                     </li>
-                    <li class="contato__item"><a href="https://www.linkedin.com/in/ramonrodsouza/" target="_blank"><img src="./assets/img/icon_linkedin.svg"
-                            alt="Logo e Link do Linkdin" width="50" height="50"></a>
+                    <li class="contato__item"><a href="https://www.linkedin.com/in/ramonrodsouza/" target="_blank"><img
+                                src="./assets/img/icon_linkedin.svg" alt="Logo e Link do Linkdin" width="50"
+                                height="50"></a>
                     </li>
-                    <li class="contato__item"><a href="https://wa.me/5521972923210?text=Ola+Ramon+Rodrigues%2C+gostaria+de+informa%C3%A7%C3%B5es+sobre+aplicativos+e+p%C3%A1ginas+web+para+meu+empreendimento." target="_blank"><img
-                            src="./assets/img/icon_whatsapp.svg"  alt="Logo e Link do Whatsapp" width="50" height="50"></a>
+                    <li class="contato__item"><a
+                            href="https://wa.me/5521972923210?text=Ola+Ramon+Rodrigues%2C+gostaria+de+informa%C3%A7%C3%B5es+sobre+aplicativos+e+p%C3%A1ginas+web+para+meu+empreendimento."
+                            target="_blank"><img src="./assets/img/icon_whatsapp.svg" alt="Logo e Link do Whatsapp"
+                                width="50" height="50"></a>
                     </li>
-                    <li class="contato__item"><a href="https://www.youtube.com/@Devzinho" target="_blank"><img
-                        src="./assets/img/icon_youtube.svg" alt="Logo e Link do Canal RodSou Youtube" width="50" height="50"></a>
-                </li>
+                    <li class="contato__item"><a href="https://www.youtube.com/@RodSouDev" target="_blank"><img
+                                src="./assets/img/icon_youtube.svg" alt="Logo e Link do Canal RodSou Youtube" width="50"
+                                height="50"></a>
+                    </li>
                 </ul>
-          </nav>
+            </nav>
         </div>
-    </section> 
+    </section>
+
     <footer class="copyright">
         <p>&copy; Copyright Ramon Rodrigues - Since 2023</p>
     </footer>
-    <script type="module" src="./index.js"></script>   
-    <script type="module" src="./jquery.js"></script>   
+
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./jquery.js"></script>
 
 </body>
 
