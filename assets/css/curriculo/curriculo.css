@@ -1,0 +1,22 @@
+.curriculo_Container {
+    width: 100%;
+    height: auto;
+}
+
+.curriculo_Container embed {
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    .curriculo_Container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .curriculo_Container embed {
+        width: 100%;
+        height: 100vh;
+    
+    }
+}
